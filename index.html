@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="construction.min.css">
+    <link rel="stylesheet" href="construction-mobile.min.css">
+    <script src="mainscripts.js"></script>
+    <meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content="Ro-ee Tal"/>
+    <title>Ro-ee Tal</title>
+  </head>
+  <body>
+    <div class="main-container" id="main-container">
+      <nav class="main-navbar" id="navbar">
+        <div class="nav-content" id="nav-content">
+          <ul class="mobile-list">
+            <li>
+              <a href="javascript:void(0);" onclick="toggleNav()">&#9776;</a>
+            </li>
+          </ul>
+          <ul class="main-list" id="main-list">
+            <a href="#about" class="active" >about</a>
+            <a href="#projects">projects</a>
+            <a href="#ubcl">ubc</a>
+            <a href="#orbit">orbit</a>
+          </ul>
+        </div>
+      </nav>
+      <section class="about" id="about">
+        <div class="about-text">
+          <h1>A showcase of my projects and work</h1>
+          <p>Scroll to view them...</p>
+        </div>
+        <div class="background"><div></div></div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="background">
+          <div></div>
+        </div>
+      </section>
+      <section class="ubc" id="ubc">
+        <div class="background">
+          <div></div>
+        </div>
+      </section>
+      <section class="orbit" id="orbit">
+        <div class="background">
+          <div></div>
+        </div>
+      </section>
+      <section class="testimonial">
+        <h4>Powered by Ro-ee Tal</h4>
+        <p>With the help of <a href="http://samtingersoll.com">Sam Ingersoll</a>, Codrops, Google APIs...</p>
+      </section>
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script src="googleapi.min.js"></script>
+		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+		<script src="jquery.easing.min.js"></script>
+		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+		<script src="waypoints.min.js"></script>
+		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+		<script src="jquery.debouncedresize.js"></script>
+    <script src="cbpFixedScrollLayout.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+  </body>
+</html>
