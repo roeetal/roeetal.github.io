@@ -57,14 +57,14 @@
 
   .about{
     .about-text-container{
-      .heading{top: 20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
+      .heading{
+        h1{
+          font-size: 3em;
+        }
       }
       .par{
         p{
-          font-weight: 100;
-          font-size: 2.3em;
+          font-size: 1.5em;
         }
       }
     }
