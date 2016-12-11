@@ -132,22 +132,17 @@ h4{
     z-index: 9998;
     background-color: #565656;
     position: absolute;
-    bottom: 50px;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, 0);
-    transition: all 1s ease;
-    // shape-inside: polygon(45% 60px,  50% 0px, 55% 60px, 50% 150px);
-    // -webkit-clip-path: polygon(45% 60px,  50% 0px, 55% 60px, 50% 150px);
-    -webkit-clip-path: circle(10%);
-    shape-inside: circle(10%);
-    width: 300px;
-    height: 300px;
+    -webkit-transform: translate(-50%, 15%);
+    -webkit-transition: all 1s ease;
+    -webkit-clip-path: circle(50%);
+    shape-inside: circle(50%);
+    width: 60px;
+    height: 60px;
     text-align: center;
-    // padding: 10px 10px;
-    // box-sizing: border-box;
     .circle-text-container{
-      /* area constraints */
-    	width : 70%;
+      width : 70%;
     	height : 70%;
     	max-width : 70%;
     	max-height : 70%;
@@ -167,8 +162,11 @@ h4{
     }
   }
   .diamond:hover {
+    bottom: 10%;
+    width: 300px;
+    height: 300px;
     -webkit-clip-path: circle(50%);
-    shape-inside: circle(40%);
+    shape-inside: circle(50%);
   }
 }
 
