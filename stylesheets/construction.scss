@@ -119,7 +119,7 @@ h4{
   }
   .background{
     z-index: 0;
-    background-image: url("mushu.JPG");
+    background-image: url("../mushu.JPG");
     div{
       margin: 0;
       padding: 0;
@@ -233,6 +233,8 @@ h4{
     padding: 5px 0;
   }
   p{
+    padding: 0 0;
+    margin: 0 0;
     font-size: .8em;
   }
   a{
