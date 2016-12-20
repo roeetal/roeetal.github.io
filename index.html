@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheets/construction.min.css">
     <link rel="stylesheet" href="stylesheets/construction-mobile.min.css">
     <script src="scripts/mainscripts.js"></script>
+    <script src="scripts/modernizr.custom.js"></script>
     <meta name="description" content="Ro-ee Tal"/>
 		<meta name="keywords" content="Ro-ee Tal"/>
 		<meta name="author" content="Ro-ee Tal"/>
@@ -28,38 +29,50 @@
           </ul>
         </div>
       </nav>
-      <section class="about" id="about">
-        <div class="about-text-container">
-          <div class="heading"><h1>A Showcase of my Work.</h1></div>
-        </div>
-        <div class="diamond">
-          <div class="circle-text-container">
-          <p>Scroll down and take a look at the projects I have been involved in at clubs, in class, with friends and on my own.</p>
+      <section id="about">
+        <div class="about-container">
+          <div class="about-text-container">
+            <div class="heading"><h1>A Showcase of my Work.</h1></div>
+          </div>
+          <div class="diamond">
+            <div class="circle-text-container">
+            <p>Scroll down and take a look at the projects I have been involved in at clubs, in class, with friends and on my own.</p>
+            </div>
+          </div>
+          <div class="background">
+            <div></div>
           </div>
         </div>
-        <div class="background">
-          <div></div>
+      </section>
+      <section id="projects">
+        <div class="projects-container">
+          <div class="background">
+            <div></div>
+          </div>
         </div>
       </section>
-      <section class="projects" id="projects">
-        <div class="background">
-          <div></div>
-        </div>
-      </section>
-      <section class="ubc" id="ubc">
-        <div class="background">
-          <div></div>
+      <section id="ubc">
+        <div class="ubc-container">
+          <div class="background">
+            <div></div>
+          </div>
         </div>
       </section>
       <section class="orbit" id="orbit">
-        <div class="background">
+        <div class="orbit-container">
+          <div class="background"></div>
           <div class="vclip">
-            <video width="960" height="720" autoplay loop>
-            <source src="ORBIT/Board.mp4" type="video/mp4"></source>
+            <video id="stmvid" preload="yes" loop="false" width="960" height="540">
+            <source src="ORBIT/Boardv2.mp4" type="video/mp4"></source>
               Your browser does not support the video tag.
             </video>
+            <div class="end-image">
+              <img width="960" height="540" src="ORBIT/end-image.png"></img>
+            </div>
           </div>
-          <div></div>
+          <div class="viewmore">
+            <a href="ORBIT/orbit.html"><h4>View more</h4></a>
+          </div>
         </div>
       </section>
       <section class="testimonial">
@@ -67,7 +80,8 @@
         <p>With the help of <a href="http://samtingersoll.com">Sam Ingersoll</a>, Codrops, Google APIs...</p>
       </section>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script src="scripts/googleapi.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
 		<script src="scripts/jquery.easing.min.js"></script>
 		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
@@ -79,6 +93,11 @@
 			$(function() {
 				cbpFixedScrollLayout.init();
 			});
+		</script>
+    <script src="scripts/classie.js"></script>
+		<script src="scripts/cbpScroller.js"></script>
+		<script>
+			new cbpScroller( document.getElementById( 'main-container' ) );
 		</script>
   </body>
 </html>

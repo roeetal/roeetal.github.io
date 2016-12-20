@@ -3,22 +3,18 @@
 
 html{
   color: black;
-  font-family: 'Ubuntu', sans-serif;
   font-family: 'Quicksand', sans-serif;
   font-size: 100%;
 }
-
 body, section{
   margin: 0;
   padding: 0;
   border-bottom: 0px;
   color: #ffffff;
 }
-
 ul{
   list-style: none;
 }
-
 a{
   text-decoration: none;
 }
@@ -44,6 +40,7 @@ h4{
   font-size: 1.3em;
 }
 
+//Colors #f1c822;#a55b61;#fad195;
 
 // Navbar
 .main-navbar, .main-navbar-responsive{
@@ -70,15 +67,16 @@ h4{
   a{
     display: block;
     line-height: 2;
+    font-family: 'Ubuntu', sans-serif;
     // transform: rotate(-90deg);
     // transform-origin: 50% 50%;
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 100;
     color: #565656;
     height: 38px;
   }
   .active{
-      border-bottom: 1.3px solid #565656;
+      border-bottom: 1.5px solid #565656;
   }
 }
 .mobile-list{
@@ -86,6 +84,18 @@ h4{
 }
 
 // Main Container
+.background{
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  div{
+    width: 100%;
+    height: 100%;
+  }
+}
 .main-container{
   height: 100%;
   z-index: 500;
@@ -97,10 +107,8 @@ h4{
   }
 }
 
-//Colors #f1c822;#a55b61;#fad195;
-
 //About Page
-.about{
+.about-container{
   .about-text-container{
     top: 15%;
     div{
@@ -109,7 +117,7 @@ h4{
     }
     .heading{
       z-index: 1;
-      width: 40%;
+      width: 580px;
       text-align: center;
       position: absolute;
       top: 30%;
@@ -171,7 +179,7 @@ h4{
 }
 
 //Projects Page
-.projects{
+.projects-container{
   .background{
     div{
       background-color: #C7D8C6;
@@ -180,7 +188,7 @@ h4{
 }
 
 //UBC Page
-.ubc{
+.ubc-container{
   .background{
     //background-image: url("ubc.jpg");
     div{
@@ -192,37 +200,64 @@ h4{
 
 //Orbit Page
 .orbit{
-  position: relative;
-  .background{
-    div{
-      background-color: #CCCBC6;
+  .orbit-container{
+    position: relative;
+    .background{
+      background-color: #D1D0CD;
+      z-index: 0;
     }
     .vclip{
-      left: 0;
-      z-index:99;
+      top: 50%;
+      left: 50%;
+      z-index:5;
       width: 960px;
-      height: 720px;
+      height: 540px;
       position: absolute;
+      -webkit-transform: translate(-49%, -30%);
+      -webkit-transition: -webkit-transform 0.8s, opacity 0.8s;
+      -moz-transition: -moz-transform 0.8s, opacity 0.8s;
+      transition: transform 0.8s, opacity 0.8s;
+    }
+    .end-image{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index:5;
+      display: none;
+      width: 960px;
+      height: 540px;
+      -webkit-transform: translate(-49%, -50%);
+    }
+    .viewmore{
+      position: absolute;
+      bottom: 100px;
+      z-index: 10;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      border: 2px solid #565656;
+      border-radius: 4px;
+      width: 130px;
+      text-align: center;
+      h4{
+        color: #565656;
+      }
     }
   }
 }
-
-.background{
-  width: 100vw;
-  height: 100vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  div{
-    width: 100%;
-    height: 100%;
+.orbit.init.animate .vclip{
+  -webkit-transform: translate(-49%, -50%);
+	opacity: 1;
+}
+.orbit.init.complete .vclip{
+  video{
+    display: none;
+  }
+  .end-image{
+    display: block;
   }
 }
-
 //footer
 .testimonial{
-  position: relative;
   background-color: #565656;
   width: 100%;
   height: 60px;
