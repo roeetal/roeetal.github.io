@@ -22,25 +22,29 @@ h1{
   font-size: 6em;
   font-weight: 200;
   margin: 0 0;
-  padding: 0 0;
+  padding: 15px 0;
 }
 h2{
   margin: 0 0;
-  padding: 0 0;
-  font-size: 2.2em;
+  padding: 5px 0;
+  font-weight: 100;
+  font-size: 2.5em;
 }
 h3{
   margin: 0 0;
-  padding: 0 0;
+  padding: 5px 0;
   font-size: 1.5em;
 }
 h4{
   margin: 0 0;
-  padding: 0 0;
+  padding: 5px 0;
   font-size: 1.3em;
 }
-
-//Colors #f1c822;#a55b61;#fad195;
+p{
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 1.2em;
+}
 
 // Navbar
 .main-navbar, .main-navbar-responsive{
@@ -108,73 +112,92 @@ h4{
 }
 
 //About Page
-.about-container{
-  .about-text-container{
-    top: 15%;
-    div{
-      display: inline-block;
-      text-align: left;
-    }
-    .heading{
+.about{
+  .about-container{
+    .about-text-container{
       z-index: 1;
-      width: 580px;
+      width: 100%;
       text-align: center;
       position: absolute;
-      top: 30%;
+      top: 50%;
       left: 50%;
-      transform: translate(-50%, -30%);
+      transform: translate(-50%, -50%);
     }
+    .about-background{
+      z-index: 0;
+      width: 100vw;
+      height: 100vh;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      div{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+      }
+    }
+    // .diamond {
+    //   z-index: 9998;
+    //   background-color: #565656;
+    //   position: absolute;
+    //   bottom: 200px;
+    //   left: 50%;
+    //   -webkit-transform: translate(-50%, 15%);
+    //   -webkit-transition: all 1s ease;
+    //   -webkit-clip-path: circle(50%);
+    //   shape-inside: circle(50%);
+    //   width: 60px;
+    //   height: 60px;
+    //   text-align: center;
+    //   .circle-text-container{
+    //     width : 70%;
+    //   	height : 70%;
+    //   	max-width : 70%;
+    //   	max-height : 70%;
+    //   	margin : 0;
+    //   	padding : 0;
+    //   	/* some position nudging to center the text area */
+    //   	position : relative;
+    //   	left : 15%;
+    //   	top : 4%;
+    //   	/* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+    //   	transform-style : preserve-3d;
+    //   }
+    //   p{
+    //     font-weight: 100;
+    //     font-size: 2em;
+    //     font-family: 'Ubuntu', sans-serif;
+    //   }
+    // }
+    // .diamond:hover {
+    //   bottom: 90px;
+    //   width: 300px;
+    //   height: 300px;
+    //   -webkit-clip-path: circle(50%);
+    //   shape-inside: circle(50%);
+    // }
   }
-  .background{
-    z-index: 0;
-    background-image: url("../mushu.JPG");
-    div{
-      margin: 0;
-      padding: 0;
-      background-color: #f1c822;
-      background-color: #87b964;
-      opacity: 0.85;
-    }
+}
+.about.first .about-background{
+  background-image: url("../mushu.JPG");
+  div{
+    background-color: #87b964;
   }
-  .diamond {
-    z-index: 9998;
-    background-color: #565656;
-    position: absolute;
-    bottom: 200px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 15%);
-    -webkit-transition: all 1s ease;
-    -webkit-clip-path: circle(50%);
-    shape-inside: circle(50%);
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    .circle-text-container{
-      width : 70%;
-    	height : 70%;
-    	max-width : 70%;
-    	max-height : 70%;
-    	margin : 0;
-    	padding : 0;
-    	/* some position nudging to center the text area */
-    	position : relative;
-    	left : 15%;
-    	top : 4%;
-    	/* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
-    	transform-style : preserve-3d;
-    }
-    p{
-      font-weight: 100;
-      font-size: 2em;
-      font-family: 'Ubuntu', sans-serif;
-    }
+}
+.about.second .about-background{
+  background-image: url("../sky.JPG");
+  div{
+    background-color: #f1c822;
   }
-  .diamond:hover {
-    bottom: 90px;
-    width: 300px;
-    height: 300px;
-    -webkit-clip-path: circle(50%);
-    shape-inside: circle(50%);
+}
+.about.third .about-background{
+  background-image: url("../vanier1.JPG");
+  div{
+    // background-color: #a55b61;
+    background-color: #77C9D4;
   }
 }
 
@@ -213,10 +236,36 @@ h4{
       width: 960px;
       height: 540px;
       position: absolute;
-      -webkit-transform: translate(-49%, -30%);
+      -webkit-transform: translate(-50%, -30%);
       -webkit-transition: -webkit-transform 0.8s, opacity 0.8s;
       -moz-transition: -moz-transform 0.8s, opacity 0.8s;
       transition: transform 0.8s, opacity 0.8s;
+    }
+    .text-panel{
+      z-index: 10;
+      -webkit-transition: -webkit-transform 1s, opacity 1s;
+      -moz-transition: -moz-transform 1s, opacity 1s;
+      transition: transform 1s, opacity 1s;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      div{
+        width: 300px;
+        height: auto;
+        top: 50%;
+        text-align: center;
+        -webkit-transform: translate(0, -50%);
+      }
+      .left-text{
+        left: 50px;
+        position: absolute;
+      }
+      .right-text{
+        right: 50px;
+        position: absolute;
+      }
     }
     .end-image{
       position: absolute;
@@ -226,26 +275,12 @@ h4{
       display: none;
       width: 960px;
       height: 540px;
-      -webkit-transform: translate(-49%, -50%);
-    }
-    .viewmore{
-      position: absolute;
-      bottom: 100px;
-      z-index: 10;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-      border: 2px solid #565656;
-      border-radius: 4px;
-      width: 130px;
-      text-align: center;
-      h4{
-        color: #565656;
-      }
+      -webkit-transform: translate(-50%, -50%);
     }
   }
 }
 .orbit.init.animate .vclip{
-  -webkit-transform: translate(-49%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 	opacity: 1;
 }
 .orbit.init.complete .vclip{
@@ -256,19 +291,32 @@ h4{
     display: block;
   }
 }
+
+.viewmore{
+  position: absolute;
+  bottom: 100px;
+  z-index: 10;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  border: 2px solid #565656;
+  border-radius: 4px;
+  width: 130px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  h4{
+    color: #565656;
+  }
+}
+
+
 //footer
 .testimonial{
   background-color: #565656;
   width: 100%;
   height: 60px;
   text-align: center;
-  h4{
-    padding: 5px 0;
-  }
   p{
-    padding: 0 0;
-    margin: 0 0;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   a{
     color: #99CED4;
