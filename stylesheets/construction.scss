@@ -32,6 +32,7 @@ h2{
 }
 h3{
   margin: 0 0;
+  font-weight: 100;
   padding: 5px 0;
   font-size: 1.5em;
 }
@@ -182,19 +183,19 @@ p{
   }
 }
 .about.first .about-background{
-  background-image: url("../mushu.JPG");
+  background-image: url("../Media/mushu.JPG");
   div{
     background-color: #87b964;
   }
 }
 .about.second .about-background{
-  background-image: url("../sky.jpg");
+  background-image: url("../Media/sky.jpg");
   div{
     background-color: #f1c822;
   }
 }
 .about.third .about-background{
-  background-image: url("../vanier1.jpg");
+  background-image: url("../Media/vanier1.jpg");
   div{
     // background-color: #a55b61;
     background-color: #77C9D4;
@@ -203,6 +204,7 @@ p{
 
 //Projects Page
 .projects-container{
+  position: relative;
   .background{
     div{
       background-color: #C7D8C6;
@@ -212,75 +214,82 @@ p{
 
 //UBC Page
 .ubc-container{
+  position: relative;
   .background{
-    //background-image: url("ubc.jpg");
     div{
       background-color: #EFD9C1;
-
     }
   }
 }
 
 //Orbit Page
 .orbit{
-  .orbit-container{
+  .intro-container{
+    color: #565656;
+    text-align: center;
     position: relative;
-    .background{
-      background-color: #D1D0CD;
-      z-index: 0;
+    .intro-heading{
+      width: 100%;
+      h1{
+        padding: 80px 0;
+      }
+    }
+    .info-panel{
+      display: inline-flex;
+      .intro-text{
+        float: left;
+        h3{
+        padding: 0 50px;
+        padding-bottom: 100px;
+        padding-top: 16px;
+        a{
+          color: #99CED4;
+        }
+        }
+      }
+      .intro-pic{
+        padding-left: 50px;
+        padding-bottom: 84px;
+      }
+    }
+  }
+  .stm-container{
+    position: relative;
+    background-color: #D1D0CD;
+    height: auto;
+    // display: inline-flex;
+    text-align: center;
+    .stm-heading{
+      padding: 0 200px;
+      padding-top: 50px;
+      h2{
+        padding-bottom: 20px;
+      }
     }
     .vclip{
-      top: 50%;
-      left: 50%;
       z-index:5;
-      width: 960px;
-      height: 540px;
-      position: absolute;
-      -webkit-transform: translate(-50%, -30%);
-      -webkit-transition: -webkit-transform 0.8s, opacity 0.8s;
-      -moz-transition: -moz-transform 0.8s, opacity 0.8s;
-      transition: transform 0.8s, opacity 0.8s;
-    }
-    .text-panel{
-      z-index: 10;
-      -webkit-transition: -webkit-transform 1s, opacity 1s;
-      -moz-transition: -moz-transform 1s, opacity 1s;
-      transition: transform 1s, opacity 1s;
       width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      div{
-        width: 300px;
-        height: auto;
-        top: 50%;
-        text-align: center;
-        -webkit-transform: translate(0, -50%);
-      }
-      .left-text{
-        left: 50px;
-        position: absolute;
-      }
-      .right-text{
-        right: 50px;
-        position: absolute;
-      }
+      padding: 50px 0;
+      -webkit-box-align:center;
+      -webkit-box-pack:center;
+      display:-webkit-box;
+      height: 540px;
+      -webkit-transform: translate(0, 10%);
+      -webkit-transition: -webkit-transform 0.7s, opacity 0.7s;
+      -moz-transition: -moz-transform 0.7s, opacity 0.7s;
+      transition: transform 0.7s, opacity 0.7s;
     }
     .end-image{
-      position: absolute;
-      top: 50%;
-      left: 50%;
       z-index:5;
       display: none;
       width: 960px;
       height: 540px;
-      -webkit-transform: translate(-50%, -50%);
+      -webkit-transform: translate(0, 0);
     }
   }
 }
 .orbit.init.animate .vclip{
-  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(0, 0);
 	opacity: 1;
 }
 .orbit.init.complete .vclip{
@@ -291,23 +300,6 @@ p{
     display: block;
   }
 }
-
-.viewmore{
-  position: absolute;
-  bottom: 100px;
-  z-index: 10;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  border: 2px solid #565656;
-  border-radius: 4px;
-  width: 130px;
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-  h4{
-    color: #565656;
-  }
-}
-
 
 //footer
 .testimonial{

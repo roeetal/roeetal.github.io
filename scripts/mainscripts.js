@@ -17,6 +17,7 @@ function checkScroll() {
     var x = document.getElementById("orbit");
     if (x.className === "orbit init animate") {
       video.play();
+      video.playbackRate = 1.5;
     }
   }
 }
@@ -38,6 +39,6 @@ function changeBackground() {
     var newClass = "about "+images[i++];
     $main.attr('class', newClass); // Set the class attribute value
     i = i % images.length; // If greater than class length, reset back to 0
-  }, 5000);
+  }, 2500);
 }
 window.onload = changeBackground;

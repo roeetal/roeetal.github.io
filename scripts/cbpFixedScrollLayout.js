@@ -50,9 +50,11 @@ var cbpFixedScrollLayout = (function() {
 
 		// on window resize: the body is scrolled to the position of the current section
 		$( window ).on( 'debouncedresize', function() {
-			scrollAnim( config.$sections.eq( config.currentLink ).offset().top );
-			var nav = document.getElementById("navbar");
-		  nav.className = "main-navbar";
+			if($( window ).width()>600){
+				scrollAnim( config.$sections.eq( config.currentLink ).offset().top );
+				var nav = document.getElementById("navbar");
+				nav.className = "main-navbar";
+			}
 		} );
 
 		//must only execute if user scrolls, not click.
