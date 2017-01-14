@@ -39,6 +39,6 @@ function changeBackground() {
     var newClass = "about "+images[i++];
     $main.attr('class', newClass); // Set the class attribute value
     i = i % images.length; // If greater than class length, reset back to 0
-  }, 2500);
+  }, 3000);
 }
 window.onload = changeBackground;

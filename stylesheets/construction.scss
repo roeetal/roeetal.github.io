@@ -259,6 +259,19 @@ p{
       }
     }
   }
+  .satellite-container{
+    position: relative;
+    background-color: #D1D0CD;
+    height: auto;
+    text-align: center;
+    .sat-heading{
+      padding: 0 200px;
+      padding-top: 50px;
+      h2{
+        padding-bottom: 20px;
+      }
+    }
+  }
   .stm-container{
     position: relative;
     background-color: #D1D0CD;
