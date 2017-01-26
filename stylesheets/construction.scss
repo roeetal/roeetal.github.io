@@ -19,7 +19,7 @@ a{
   text-decoration: none;
 }
 h1{
-  font-size: 6em!important;
+  font-size: 5em!important;
   font-weight: 200!important;
   margin: 0 0!important;
   padding: 15px 0!important;
@@ -52,6 +52,7 @@ p{
   width: 100%;
   left: 0;
   top: 0;
+  height: 48px;
   position: fixed;
   z-index: 9999;
   background-color: transparent;
@@ -209,21 +210,21 @@ p{
 }
 
 //Projects Page
-.projects-container{
+.projects{
   position: relative;
   .background{
     div{
-      background-color: #C7D8C6;
+      background-color: #D1D0CD;
     }
   }
 }
 
 //UBC Page
-.ubc-container{
+.ubc{
   position: relative;
   .background{
     div{
-      background-color: #EFD9C1;
+      background-color: #D1D0CD;
     }
   }
 }
@@ -236,6 +237,9 @@ p{
     height: auto;
     text-align: center;
     .sat-heading{
+      h3{
+        color: red;
+      }
       padding: 0 200px;
       padding-top: 50px;
       h2{
