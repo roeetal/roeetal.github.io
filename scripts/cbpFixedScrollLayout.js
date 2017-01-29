@@ -33,7 +33,7 @@ var cbpFixedScrollLayout = (function() {
 			if($( window ).width()<600){
 				toggleNav();
 			}
-			scrollAnim( config.$sections.eq( $( this ).index() ).offset().top );
+			scrollAnim( config.$sections.eq( $( this ).index() ).offset().top);
 			return false;
 		} );
 
@@ -76,7 +76,7 @@ var cbpFixedScrollLayout = (function() {
 
 	// function to scroll / animate the body
 	function scrollAnim( top ) {
-		config.$body.stop().animate( { scrollTop : top }, config.animspeed, config.animeasing );
+		config.$body.stop().animate( { scrollTop : (top-60) }, config.animspeed, config.animeasing );
 	}
 
 	return { init : init };

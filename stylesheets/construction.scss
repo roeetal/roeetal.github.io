@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700');
 
 html{
-  color: black;
   font-family: 'Quicksand', sans-serif!important;
   font-size: 100%;
 }
@@ -10,7 +9,8 @@ body, section{
   margin: 0;
   padding: 0;
   border-bottom: 0px;
-  color: #ffffff;
+  color: #565656;
+  background-color: #E9E9E9;
 }
 ul{
   list-style: none;
@@ -19,8 +19,9 @@ a{
   text-decoration: none;
 }
 h1{
-  font-size: 5em!important;
-  font-weight: 200!important;
+  font-family: 'Ubuntu', sans-serif!important;
+  font-size: 3.8em!important;
+  font-weight: 300!important;
   margin: 0 0!important;
   padding: 15px 0!important;
 }
@@ -28,19 +29,28 @@ h2{
   margin: 0 0;
   padding: 5px 0;
   font-weight: 100;
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 h3{
   margin: 0 0;
-  font-weight: 100;
-  padding: 5px 0;
-  font-size: 1.5em;
+  font-weight: 400;
+  padding: 25px 0;
+  font-size: 2.2em;
 }
 h4{
   margin: 0 0;
   padding: 5px 0;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: 100;
 }
+h5{
+  margin: 0 0;
+  font-weight: 200;
+  padding: 5px 0;
+  font-size: 2.1em;
+}
+
+
 p{
   padding: 0 0;
   margin: 0 0;
@@ -52,10 +62,9 @@ p{
   width: 100%;
   left: 0;
   top: 0;
-  height: 48px;
   position: fixed;
   z-index: 9999;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 .main-list{
   min-width: 480px;
@@ -67,19 +76,15 @@ p{
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  // -ms-flex-direction: column;
-  // flex-direction: column;
   text-align: justify;
+  height: 60px;
   a{
     display: block;
-    line-height: 2;
+    line-height: 1.5;
     font-family: 'Ubuntu', sans-serif;
-    // transform: rotate(-90deg);
-    // transform-origin: 50% 50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 100;
     color: #565656;
-    height: 38px;
   }
   .active{
       border-bottom: 1.5px solid #565656;
@@ -111,7 +116,6 @@ p{
 .main-container{
   height: 100%;
   z-index: 500;
-  //display: inline-flex; - horizontal
   section{
     margin: 0;
     padding: 0;
@@ -130,6 +134,7 @@ p{
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      color: #ffffff;
     }
     .about-background{
       z-index: 0;
@@ -147,46 +152,6 @@ p{
         opacity: 0.8;
       }
     }
-    // .diamond {
-    //   z-index: 9998;
-    //   background-color: #565656;
-    //   position: absolute;
-    //   bottom: 200px;
-    //   left: 50%;
-    //   -webkit-transform: translate(-50%, 15%);
-    //   -webkit-transition: all 1s ease;
-    //   -webkit-clip-path: circle(50%);
-    //   shape-inside: circle(50%);
-    //   width: 60px;
-    //   height: 60px;
-    //   text-align: center;
-    //   .circle-text-container{
-    //     width : 70%;
-    //   	height : 70%;
-    //   	max-width : 70%;
-    //   	max-height : 70%;
-    //   	margin : 0;
-    //   	padding : 0;
-    //   	/* some position nudging to center the text area */
-    //   	position : relative;
-    //   	left : 15%;
-    //   	top : 4%;
-    //   	/* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
-    //   	transform-style : preserve-3d;
-    //   }
-    //   p{
-    //     font-weight: 100;
-    //     font-size: 2em;
-    //     font-family: 'Ubuntu', sans-serif;
-    //   }
-    // }
-    // .diamond:hover {
-    //   bottom: 90px;
-    //   width: 300px;
-    //   height: 300px;
-    //   -webkit-clip-path: circle(50%);
-    //   shape-inside: circle(50%);
-    // }
   }
 }
 .about.first .about-background{
@@ -204,28 +169,7 @@ p{
 .about.third .about-background{
   background-image: url("../Media/vanier1.jpg");
   div{
-    // background-color: #a55b61;
     background-color: #77C9D4;
-  }
-}
-
-//Projects Page
-.projects{
-  position: relative;
-  .background{
-    div{
-      background-color: #D1D0CD;
-    }
-  }
-}
-
-//UBC Page
-.ubc{
-  position: relative;
-  .background{
-    div{
-      background-color: #D1D0CD;
-    }
   }
 }
 
@@ -233,7 +177,6 @@ p{
 .orbit{
   .satellite-container{
     position: relative;
-    background-color: #D1D0CD;
     height: auto;
     text-align: center;
     .sat-heading{
@@ -249,9 +192,7 @@ p{
   }
   .stm-container{
     position: relative;
-    background-color: #D1D0CD;
     height: auto;
-    // display: inline-flex;
     text-align: center;
     .stm-heading{
       padding: 0 200px;
@@ -297,32 +238,19 @@ p{
 }
 
 .intro-container{
-  color: #565656;
-  text-align: center;
-  position: relative;
-  .intro-heading{
-    width: 100%;
-    h1{
-      padding: 80px 0;
-    }
+  display: inline-block;
+  background-color: #F4F4F4;
+  width: 100%;
+  .intro-text{
+    width: 50%;
+    float: left;
+    color: #565656;
+    box-sizing: border-box;
+    padding: 100px 100px;
   }
-  .info-panel{
-    display: inline-flex;
-    .intro-text{
-      float: left;
-      h3{
-      padding: 0 50px;
-      padding-bottom: 100px;
-      padding-top: 16px;
-      a{
-        color: #99CED4;
-      }
-      }
-    }
-    .intro-pic{
-      padding-left: 50px;
-      padding-bottom: 84px;
-    }
+  .intro-pic{
+    width: 50%;
+    float: right;
   }
 }
 
@@ -338,3 +266,53 @@ p{
     color: #99CED4;
   }
 }
+
+// .diamond {
+//   z-index: 9998;
+//   background-color: #565656;
+//   position: absolute;
+//   bottom: 200px;
+//   left: 50%;
+//   -webkit-transform: translate(-50%, 15%);
+//   -webkit-transition: all 1s ease;
+//   -webkit-clip-path: circle(50%);
+//   shape-inside: circle(50%);
+//   width: 60px;
+//   height: 60px;
+//   text-align: center;
+//   .circle-text-container{
+//     width : 70%;
+//   	height : 70%;
+//   	max-width : 70%;
+//   	max-height : 70%;
+//   	margin : 0;
+//   	padding : 0;
+//   	/* some position nudging to center the text area */
+//   	position : relative;
+//   	left : 15%;
+//   	top : 4%;
+//   	/* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+//   	transform-style : preserve-3d;
+//   }
+//   p{
+//     font-weight: 100;
+//     font-size: 2em;
+//     font-family: 'Ubuntu', sans-serif;
+//   }
+// }
+// .diamond:hover {
+//   bottom: 90px;
+//   width: 300px;
+//   height: 300px;
+//   -webkit-clip-path: circle(50%);
+//   shape-inside: circle(50%);
+// }
+
+// transform: rotate(-90deg);
+// transform-origin: 50% 50%;
+
+// -ms-flex-direction: column;
+// flex-direction: column;
+
+// display: inline-flex;
+  //display: inline-flex; - horizontal
