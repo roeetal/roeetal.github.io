@@ -17,6 +17,7 @@ ul{
 }
 a{
   text-decoration: none;
+  color: #99CED4;
 }
 h1{
   font-family: 'Ubuntu', sans-serif!important;
@@ -87,7 +88,8 @@ p{
     color: #565656;
   }
   .active{
-      border-bottom: 1.5px solid #565656;
+      border-bottom: 1.5px solid #99CED4;
+      color: #99CED4;
   }
 }
 .mobile-list{
@@ -175,6 +177,15 @@ p{
 
 //Orbit Page
 .orbit{
+  .intro-container{
+    .intro-text{
+      float: right;
+      text-align: right;
+    }
+    .intro-pic{
+      float: left;
+    }
+  }
   .satellite-container{
     position: relative;
     height: auto;
@@ -237,21 +248,52 @@ p{
   }
 }
 
+//Projects
+.ubc{
+  .intro-container{
+    .intro-pic{
+      background-image: url("../Media/claw2.jpg");
+    }
+  }
+}
+
+.projects{
+  .slackbot{
+    .intro-container{
+      .intro-pic{
+        background-image: url("../Media/bot.PNG");
+      }
+    }
+  }
+}
+
 .intro-container{
   display: inline-block;
   background-color: #F4F4F4;
-  width: 100%;
+  width: 100vw;
+  height: 60vh;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
   .intro-text{
     width: 50%;
-    float: left;
     color: #565656;
     box-sizing: border-box;
     padding: 100px 100px;
   }
   .intro-pic{
+    height: 100%;
+    display: block;
     width: 50%;
     float: right;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
   }
+}
+
+.body{
+  height: 600px;
 }
 
 //footer
@@ -259,11 +301,9 @@ p{
   background-color: #565656;
   width: 100%;
   text-align: center;
+  color: #ffffff;
   p{
     font-size: 0.8em;
-  }
-  a{
-    color: #99CED4;
   }
 }
 
