@@ -253,7 +253,7 @@ p{
       background-color: #ffffff;
     .body-container{
       .body-pic{
-        background-image: url("../Media/bot.PNG");
+        background-image: url("../Media/bot-cropped.png");
       }
     }
   }
@@ -293,20 +293,28 @@ p{
   }
 }
 
+.body-head.middle{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 50px 50px;
+}
+
 .body-container.middle{
-  width: 100vw;
-  height: 100vh;
+  // width: 100vw;
+  // height: 100vh;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
   .body-text.left{
     width: 30%;
     box-sizing: border-box;
-    padding: 100px 100px;
+    padding: 50px 50px;
   }
   .body-pic.middle{
-    height: 100%;
-    width: 40%;
+    width: 40vw;
+    height: 80vh;
     display: block;
     float: right;
     background-repeat: no-repeat;
@@ -316,7 +324,7 @@ p{
   .body-text.right{
     width: 30%;
     box-sizing: border-box;
-    padding: 100px 100px;
+    padding: 50px 50px;
   }
 }
 
