@@ -40,9 +40,9 @@ h3{
 }
 h4{
   margin: 0 0;
-  padding: 5px 0;
   font-size: 1.5em;
   font-weight: 100;
+  padding: 25px 0;
 }
 h5{
   margin: 0 0;
@@ -177,15 +177,6 @@ p{
 
 //Orbit Page
 .orbit{
-  .intro-container{
-    .intro-text{
-      float: right;
-      text-align: right;
-    }
-    .intro-pic{
-      float: left;
-    }
-  }
   .satellite-container{
     position: relative;
     height: auto;
@@ -259,8 +250,9 @@ p{
 
 .projects{
   .slackbot{
-    .intro-container{
-      .intro-pic{
+      background-color: #ffffff;
+    .body-container{
+      .body-pic{
         background-image: url("../Media/bot.PNG");
       }
     }
@@ -268,7 +260,6 @@ p{
 }
 
 .intro-container{
-  display: inline-block;
   background-color: #F4F4F4;
   width: 100vw;
   height: 60vh;
@@ -292,8 +283,41 @@ p{
   }
 }
 
-.body{
-  height: 600px;
+.intro-container.right{
+  .intro-text{
+    float: right;
+    text-align: right;
+  }
+  .intro-pic{
+    float: left;
+  }
+}
+
+.body-container.middle{
+  width: 100vw;
+  height: 100vh;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .body-text.left{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 100px 100px;
+  }
+  .body-pic.middle{
+    height: 100%;
+    width: 40%;
+    display: block;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  .body-text.right{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 100px 100px;
+  }
 }
 
 //footer
