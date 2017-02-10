@@ -3455,6 +3455,11 @@
 		min-height: 22em;
 		position: relative;
 		top: -3.25em;
+
+		transition: background-image 1s ease-in-out;
+	  -moz-transition: background-image 1s ease-in-out;
+	  -webkit-transition: background-image 1s ease-in-out;
+	  -o-transition: background-image 1s ease-in-out;
 	}
 
 		#banner:after {
