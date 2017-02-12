@@ -1,3 +1,8 @@
+My first website.
+This website is basically a personal website dedicated to showcasing work I am interested in and have been involved in.
+
+I credit the template from HTML5Up I used below:
+
 Forty by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
