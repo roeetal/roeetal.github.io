@@ -39,6 +39,11 @@ p{
 
 /*Main*/
 
+/*Contrusction*/
+.page{
+  position: relative;
+}
+
 .page-containers .page .image{
   width: 100vw;
   height: 100vh;
