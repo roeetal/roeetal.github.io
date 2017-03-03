@@ -78,25 +78,50 @@ p{
 
 /*Page 1*/
 
-.page-containers .page:nth-child(3n - 2) .image{
+.page-containers :nth-child(3n - 2) .image{
   background-image: url("../imgs/ClawMain.jpeg");
 }
 
-.page-containers .page :nth-child(3n - 2) .text-heading{
+.page-containers :nth-child(3n - 2) .text-body{
   position:absolute;
   top: 200px;
+  left: 0;
   padding-left: 75px;
   padding-right: 75px;
 }
 
-.page-containers .page :nth-child(3n - 2) p{
+.page-containers :nth-child(3n - 2) p{
   padding-top: 350px;
+}
+
+/*Page 2*/
+
+.page-containers :nth-child(3n - 1) .image{
+  background-image: url("../imgs/sat.JPG");
+}
+
+.page-containers :nth-child(3n - 1) .text-body{
+  position:absolute;
+  right: 0;
+  top: 200px;
+  padding-left: 75px;
+  padding-right: 75px;
+  color: #ffffff;
+  text-align: right;
 }
 
 /*Transitions*/
 
 .init .slider {
 	opacity: 0;
+}
+
+.page-containers .page .slider-delay{
+  opacity: 0;
+}
+
+.page-containers .page .slider-delay2{
+  opacity: 0;
 }
 
 .page-containers .page .slider{
@@ -136,7 +161,7 @@ p{
 }
 
 .page.animate .left,
-.cpage.animate .right {
+.page.animate .right {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
@@ -157,11 +182,11 @@ p{
     font-size: 1.1em;
   }
 
-  .page-containers .page:nth-child(3n - 2) .image{
+  .page-containers :nth-child(3n - 2) .image{
     background-image: url("../imgs/ClawiPhone.jpeg");
   }
 
-  .page-containers .page :nth-child(3n - 2) .text-heading{
+  .page-containers :nth-child(3n - 2) .text-body{
     width: 100%;
     box-sizing: border-box;
     padding: 15px 15px;
@@ -170,14 +195,14 @@ p{
     text-align: center;
   }
 
-  .page-containers .page :nth-child(3n - 2) h2{
+  .page-containers :nth-child(3n - 2) h2{
     padding-top: 365px;
   }
-  .page-containers .page :nth-child(3n - 2) h4{
+  .page-containers :nth-child(3n - 2) h4{
     padding-top: 0px;
     font-size: 1.2;
   }
-  .page-containers .page :nth-child(3n - 2) p{
+  .page-containers :nth-child(3n - 2) p{
     line-height: 1.1;
     padding-top: 10px;
   }
@@ -190,15 +215,36 @@ p{
   }
 
   .page-containers h4{
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   .page-containers p{
     font-size: 1.1em;
   }
 
-  .page-containers .page:nth-child(3n - 2) .image{
+  .page-containers :nth-child(3n - 2) .image{
     background-image: url("../imgs/ClawiPhone.jpeg");
+  }
+
+  .page-containers :nth-child(3n - 2) .text-body{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  .page-containers :nth-child(3n - 2) h2{
+    padding-top: 365px;
+  }
+  .page-containers :nth-child(3n - 2) h4{
+    padding-top: 0px;
+    font-size: 1.2;
+  }
+  .page-containers :nth-child(3n - 2) p{
+    line-height: 1.1;
+    padding-top: 10px;
   }
 }
 
@@ -209,15 +255,36 @@ p{
   }
 
   .page-containers h4{
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   .page-containers p{
     font-size: 1.1em;
   }
 
-  .page-containers .page:nth-child(3n - 2) .image{
+  .page-containers :nth-child(3n - 2) .image{
     background-image: url("../imgs/ClawiPhone.jpeg");
+  }
+
+  .page-containers :nth-child(3n - 2) .text-body{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  .page-containers :nth-child(3n - 2) h2{
+    padding-top: 365px;
+  }
+  .page-containers :nth-child(3n - 2) h4{
+    padding-top: 0px;
+    font-size: 1.2;
+  }
+  .page-containers :nth-child(3n - 2) p{
+    line-height: 1.1;
+    padding-top: 10px;
   }
 }
 
@@ -309,6 +376,9 @@ p{
       padding: 0.4em;
       font-size: 1.1em;
     }
+    #navbar .cells{
+      padding: 0;
+    }
   }
 
   @media only screen and (max-width: 520px) {
@@ -318,6 +388,9 @@ p{
       #intro h5 {
           font-size: 12px;
       }
+      #navbar .cells{
+        padding: 0;
+      }
   }
 
   @media only screen and (max-width: 420px) {
@@ -326,6 +399,9 @@ p{
       }
       #intro h5 {
           font-size: 12px;
+      }
+      #navbar .cells{
+        padding: 0;
       }
   }
 
