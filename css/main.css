@@ -102,14 +102,14 @@ p{
 
 /*Page 2*/
 
-.page-containers :nth-child(3n - 1) .image{
+/*.page-containers :nth-child(3n - 1) .image{
   background-image: url("../imgs/sat.JPG");
 }
 
 .page-containers :nth-child(3n - 1) .text-body{
   right: 0;
   text-align: right;
-}
+}*/
 
 /*Transitions*/
 
