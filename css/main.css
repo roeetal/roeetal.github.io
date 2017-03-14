@@ -41,7 +41,7 @@ p{
 
 /*Contrusction*/
 #wrapper{
-  padding-top: 85px;
+  padding-top: -15px;
 }
 
 .page{
@@ -50,33 +50,35 @@ p{
 
 .page-containers .page .image{
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .page-containers .page .image .text-body{
-  width: 100%;
+  width: 50%;
   height: 100%;
-  padding: 75px 75px;
+  padding: 90px 75px;
+  padding-bottom: 0;
+  overflow: hidden;
   box-sizing: border-box;
   position:absolute;
   top: 0;
   left: 0;
+  color: #090909;
 }
 
 .page-containers h2{
-  color: #090909;
   font-weight: 400;
   font-size: 2.8em;
   letter-spacing: 1px;
   margin: 0;
+  padding-top: 15%;
   padding-bottom: 30px;
 }
 
 .page-containers h4{
-  color: #090909;
   font-weight: 100;
   font-size: 2.5em;
   letter-spacing: 2px;
@@ -84,20 +86,19 @@ p{
 }
 
 .page-containers p{
+  color: #090909;
   font-size: 1.5em;
   font-weight: 200;
-  color: #090909;
   letter-spacing: 1.5px;
+  padding-top: 50px;
+  padding-right: 10%;
+  line-height: 1.5;
 }
 
 /*Page 1*/
 
 .page-containers :nth-child(3n - 2) .image{
-  background-image: url("../imgs/ClawMain.jpeg");
-}
-
-.page-containers :nth-child(3n - 2) p{
-  padding-top: 375px;
+  background-image: url("../imgs/claw1080green.jpg");
 }
 
 /*Page 2*/
@@ -117,11 +118,11 @@ p{
 	opacity: 0;
 }
 
-.page-containers .page .slider-delay{
+.init .slider-delay{
   opacity: 0;
 }
 
-.page-containers .page .slider-delay2{
+.init .slider-delay2{
   opacity: 0;
 }
 
@@ -132,21 +133,21 @@ p{
 }
 
 .page-containers .page .slider-delay{
-  -webkit-transition: -webkit-transform 0.75s, opacity 0.75s;
-  -moz-transition: -moz-transform 0.75s, opacity 0.75s;
-  transition: transform 0.75s, opacity 0.75s;
-  transition-delay: 0.1s;
-  -webkit-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
+  -webkit-transition: -webkit-transform 0.8s, opacity 0.8s;
+  -moz-transition: -moz-transform 0.8s, opacity 0.8s;
+  transition: transform 0.8s, opacity 0.8s;
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
 }
 
 .page-containers .page .slider-delay2{
-  -webkit-transition: -webkit-transform 0.75s, opacity 0.75s;
-  -moz-transition: -moz-transform 0.75s, opacity 0.75s;
-  transition: transform 0.75s, opacity 0.75s;
-  transition-delay: 1.75s;
-  -webkit-transition-delay: 1.75s;
-  -moz-transition-delay: 1.75s;
+  -webkit-transition: -webkit-transform 0.9s, opacity 0.9s;
+  -moz-transition: -moz-transform 0.9s, opacity 0.9s;
+  transition: transform 0.9s, opacity 0.9s;
+  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
 }
 
 .init .left {
@@ -167,6 +168,18 @@ p{
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 	opacity: 1;
+}
+
+@media only screen and (max-width: 1280px) {
+  .page-containers :nth-child(3n - 2) .image{
+    background-image: url("../imgs/claw1080green.jpg");
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .page-containers :nth-child(3n - 2) .image{
+    background-image: url("../imgs/claw768green.jpg");
+  }
 }
 
 @media only screen and (max-width: 670px) {
