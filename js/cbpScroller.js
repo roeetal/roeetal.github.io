@@ -80,7 +80,7 @@
 			// The viewportFactor defines how much of the appearing item has to be visible in order to trigger the animation
 			// if we'd use a value of 0, this would mean that it would add the animation class as soon as the item is in the viewport.
 			// If we were to use the value of 1, the animation would only be triggered when we see all of the item in the viewport (100% of it)
-			viewportFactor : 0.8
+			viewportFactor : 0.6
 		},
 		_init : function() {
 			if( Modernizr.touch ) return;
@@ -98,7 +98,7 @@
 			var scrollHandler = function() {
 					if( !self.didScroll ) {
 						self.didScroll = true;
-						setTimeout( function() { self._scrollPage(); }, 60 );
+						setTimeout( function() { self._scrollPage(); }, 100 );
 					}
 				},
 				resizeHandler = function() {
@@ -109,7 +109,7 @@
 					if ( self.resizeTimeout ) {
 						clearTimeout( self.resizeTimeout );
 					}
-					self.resizeTimeout = setTimeout( delayed, 200 );
+					self.resizeTimeout = setTimeout( delayed, 300 );
 				};
 
 			window.addEventListener( 'scroll', scrollHandler, false );
