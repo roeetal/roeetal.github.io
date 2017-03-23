@@ -56,14 +56,10 @@ p{
 .page-containers .page .image .text-body{
   width: 50%;
   height: 100%;
-  padding-top: 80px;
   overflow: hidden;
   box-sizing: border-box;
-  padding-left: 5%;
   position:absolute;
   top: 0;
-  left: 0;
-  color: #090909;
 }
 
 .page-containers h2{
@@ -71,8 +67,6 @@ p{
   font-size: 2.8em;
   letter-spacing: 1px;
   margin: 0;
-  padding-top: 25%;
-  padding-bottom: 5%;
 }
 
 .page-containers h4{
@@ -83,19 +77,59 @@ p{
 }
 
 .page-containers p{
-  color: #090909;
   font-size: 1.5em;
   font-weight: 200;
   letter-spacing: 1.5px;
-  padding-top: 15%;
-  padding-right: 15%;
   line-height: 1.5;
 }
 
 /*Page 1*/
-
+/*2878 × 1747*/
 .page-containers :nth-child(3n - 2) .image{
   background-image: url("../imgs/claw3green.jpg");
+}
+
+.page-containers :nth-child(3n - 2) .image .text-body{
+  padding-top: 80px;
+  padding-left: 5%;
+  left: 0;
+}
+
+.page-containers :nth-child(3n - 2) .image .text-body h2{
+    color: #090909;
+    padding-top: 25%;
+    padding-bottom: 5%;
+}
+.page-containers :nth-child(3n - 2) .image .text-body h4{
+    color: #090909;
+}
+.page-containers :nth-child(3n - 2) .image .text-body p{
+    color: #090909;
+    padding-top: 15%;
+    padding-right: 15%;
+}
+
+
+/*Page 2*/
+
+.page-containers :nth-child(3n - 1) .image{
+  background-image: url("../imgs/botblack.jpg");
+}
+
+.page-containers :nth-child(3n - 1) .image .text-body{
+  text-align: right;
+  padding-right: 5%;
+  right: 0;
+}
+
+.page-containers :nth-child(3n - 1) .image .text-body h2{
+  color: #ffffff;
+}
+.page-containers :nth-child(3n - 1) .image .text-body h4{
+  color: #ffffff;
+}
+.page-containers :nth-child(3n - 1) .image .text-body p{
+  color: #ffffff;
 }
 
 /*Transitions*/
@@ -156,7 +190,7 @@ p{
 	opacity: 1;
 }
 
-/*Med Desktop*/
+/*Med Desktop 3192 × 2207*/
 @media only screen and (max-width: 1400px) {
   .page-containers :nth-child(3n - 2) .image{
     background-image: url("../imgs/claw2green.jpg");
@@ -173,7 +207,7 @@ p{
   }
 }
 
-/*iPad*/
+/*iPad 2126 × 2768*/
 @media only screen and (max-width: 768px) {
   .page-containers .page .image{
     height: 140vh;
