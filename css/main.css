@@ -215,13 +215,13 @@ p{
   .page-containers :nth-child(3n - 2) .image{
     background-image: url("../imgs/claw2green.jpg");
   }
-  .page-containers :nth-child(3n - 2) h2{
+  .page-containers :nth-child(3n - 2) .image .text-body h2{
     font-size: 2.6em;
   }
-  .page-containers :nth-child(3n - 2) h4{
+  .page-containers :nth-child(3n - 2) .image .text-body h4{
     font-size: 2em;
   }
-  .page-containers :nth-child(3n - 2) p{
+  .page-containers :nth-child(3n - 2) .image .text-body p{
     font-size: 1.4em;
     line-height: 1.4;
   }
@@ -243,16 +243,16 @@ p{
     text-align: center;
   }
 
-  .page-containers :nth-child(3n - 2) h2{
+  .page-containers :nth-child(3n - 2) .image .text-body h2{
     font-size: 2.2em;
     padding-top: 10vh;
     padding-bottom: 0;
   }
-  .page-containers :nth-child(3n - 2) h4{
+  .page-containers :nth-child(3n - 2) .image .text-body h4{
     font-size: 1.6em;
     padding-top: 2vh;
   }
-  .page-containers :nth-child(3n - 2) p{
+  .page-containers :nth-child(3n - 2) .image .text-body p{
     font-size: 1.4em;
     padding-top: 65vh;
   }
@@ -323,15 +323,15 @@ p{
     text-align: center;
   }
 
-  .page-containers :nth-child(3n - 2) h2{
+  .page-containers :nth-child(3n - 2) .image .text-body h2{
     font-size: 2em;
     padding-top: 10vh;
   }
-  .page-containers :nth-child(3n - 2) h4{
+  .page-containers :nth-child(3n - 2) .image .text-body h4{
     font-size: 1.4em;
     padding-top: 2vh;
   }
-  .page-containers :nth-child(3n - 2) p{
+  .page-containers :nth-child(3n - 2) .image .text-body p{
     font-size: 1.1em;
     padding-top: 64vh;
   }
@@ -401,15 +401,15 @@ p{
     text-align: center;
   }
 
-  .page-containers :nth-child(3n - 2) h2{
+  .page-containers :nth-child(3n - 2) .image .text-body h2{
     font-size: 2em;
     padding-top: 10vh;
   }
-  .page-containers :nth-child(3n - 2) h4{
+  .page-containers :nth-child(3n - 2) .image .text-body h4{
     font-size: 1.4em;
     padding-top: 2vh;
   }
-  .page-containers :nth-child(3n - 2) p{
+  .page-containers :nth-child(3n - 2) .image .text-body p{
     font-size: 1.3em;
     padding-top: 95vh;
   }
