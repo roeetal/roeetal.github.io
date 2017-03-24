@@ -333,7 +333,46 @@ p{
   }
   .page-containers :nth-child(3n - 2) .image .text-body p{
     font-size: 1.1em;
+    padding-right: 0;
+    padding-left: 0;
     padding-top: 64vh;
+  }
+
+  /*Page 2*/
+
+  .page-containers :nth-child(3n - 1) .image .text-body h2{
+    color: #ffffff;
+    font-size: 2em;
+    padding-top: 5vh;
+  }
+  .page-containers :nth-child(3n - 1) .image .text-body h4{
+    color: #ffffff;
+    font-size: 1.4em;
+    padding-top: 2vh;
+  }
+  .page-containers :nth-child(3n - 1) .image .text-body p{
+    color: #ffffff;
+    padding-top: 15%;
+    padding-left: 15%;
+    font-size: 1.1em;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 85vh;
+  }
+  .page-containers :nth-child(3n - 1) .image .moving-image{
+    background-image: url("../imgs/bot.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 325px;
+    height: 578px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    /*-webkit-box-shadow: 0 3px 3px -3px #ffffff;
+    -moz-box-shadow: 0 3px 3px -3px #ffffff;
+    box-shadow: 0 3px 3px -3px #ffffff;*/
   }
 
   .page-containers p{
