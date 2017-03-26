@@ -125,8 +125,7 @@
 				else {
 					// this add class init if it doesn't have it. This will ensure that the items initially in the viewport will also animate on scroll
 					classie.add( el, 'init' );
-
-					classie.remove( el, 'animate' );
+					// classie.remove( el, 'animate' );
 				}
 			});
 			this.didScroll = false;
