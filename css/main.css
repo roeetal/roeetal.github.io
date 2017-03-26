@@ -47,6 +47,7 @@ p{
 .page-containers .page .image{
   width: 100vw;
   height: 105vh;
+  min-height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,6 +63,23 @@ p{
   box-sizing: border-box;
   position:absolute;
   top: 0;
+}
+
+.page-containers .page .image .moving-image-container{
+  height: 100%;
+  position: absolute;
+  display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+  -ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.page-containers .page .image .moving-image-container .moving-image{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-containers h2{
@@ -135,11 +153,21 @@ p{
 	transform: translateX(120px);
 }
 
+.init .bottom {
+  -webkit-transform: translateY(120px);
+  -moz-transform: translateY(120px);
+  transform: translateY(120px);
+}
+
 .page.animate .left,
-.page.animate .right {
+.page.animate .right,
+.page.animate .bottom {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
 	opacity: 1;
 }
 
@@ -195,19 +223,16 @@ p{
 }
 .page-containers :nth-child(3n - 1) .image .moving-image{
   background-image: url("../imgs/botbot.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 375px;
   height: 667px;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-  margin-left: 5vw;
+  top: 0;
+  margin: auto auto;
+  margin-left: 10vw;
   -webkit-box-shadow: 0 2px 2px 2px #2D2F31;
   -moz-box-shadow: 0 2px 2px 2px #2D2F31;
   box-shadow: 0 2px 2px 2px #2D2F31;
 }
+
 
 /*Med Desktop 3192 × 2207*/
 @media only screen and (max-width: 1400px) {
@@ -237,6 +262,9 @@ p{
   .page-containers :nth-child(3n - 1) .image .text-body p{
     font-size: 1.4em;
     line-height: 1.4;
+  }
+  .page-containers :nth-child(3n - 1) .image .moving-image{
+    margin-left: 5vw;
   }
 }
 
@@ -305,11 +333,21 @@ p{
     transform: translateX(0px);
   }
 
+  .init .bottom {
+    -webkit-transform: translateY(-120px);
+    -moz-transform: translateY(-120px);
+    transform: translateY(-120px);
+  }
+
   .page.animate .left,
-  .page.animate .right {
+  .page.animate .right,
+  .page.animate .bottom, {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     transform: translateY(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
     opacity: 1;
   }
 
@@ -336,6 +374,12 @@ p{
     text-align: center;
   }
 
+  .page-containers .page .image .moving-image-container{
+    height: auto;
+    position: relative;
+    transform: translateY(0);
+  }
+
   .page-containers :nth-child(3n - 2) .image .text-body h2{
     font-size: 2em;
     padding: 0;
@@ -352,6 +396,13 @@ p{
   }
 
   /*Page 2*/
+  .page-containers :nth-child(3n - 1) .image{
+    height: 150vh;
+  }
+
+  .page-containers :nth-child(3n - 1) .image .text-body{
+    padding-top: 0;
+  }
 
   .page-containers :nth-child(3n - 1) .image .text-body h2{
     color: #ffffff;
@@ -370,15 +421,17 @@ p{
     font-size: 1.1em;
     padding-right: 0;
     padding-left: 0;
-    padding-top: 85vh;
+    padding-top: 95vh;
   }
+
+  .page-containers :nth-child(3n - 1) .image .moving-image-container{
+    padding-top: 45%;
+  }
+
   .page-containers :nth-child(3n - 1) .image .moving-image{
-    width: 300px;
-    height: 450px;
-    padding: 0 auto;
-    transform: translateY(-60%);
+    max-width: 300px;
+    max-height: 520px;
     margin: 0 auto;
-    position: relative;
   }
 
   .page-containers p{
