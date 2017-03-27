@@ -198,30 +198,30 @@ p{
 	opacity: 1;
 }
 
-.page-containers :nth-child(4n - 3) .image{
+.page-containers :nth-child(4n - 2) .image{
   background-image: url("../imgs/sat2878.jpg");
 }
 
 /*Page 1*/
 /*2878 × 1747*/
-.page-containers :nth-child(4n - 2) .image{
+.page-containers :nth-child(4n - 3) .image{
   background-image: url("../imgs/claw3green.jpg");
 }
 
-.page-containers :nth-child(4n - 2) .image .text-body{
+.page-containers :nth-child(4n - 3) .image .text-body{
   padding-left: 5vw;
   left: 0;
 }
 
-.page-containers :nth-child(4n - 2) .image .text-body h2{
+.page-containers :nth-child(4n - 3) .image .text-body h2{
     color: #090909;
     padding-top: 80px;
     padding-bottom: 5%;
 }
-.page-containers :nth-child(4n - 2) .image .text-body h4{
+.page-containers :nth-child(4n - 3) .image .text-body h4{
     color: #090909;
 }
-.page-containers :nth-child(4n - 2) .image .text-body p{
+.page-containers :nth-child(4n - 3) .image .text-body p{
     color: #090909;
     padding-top: 15%;
     padding-right: 15%;
@@ -267,21 +267,21 @@ p{
 
 /*Med Desktop 3192 × 2207*/
 @media only screen and (max-width: 1400px) {
-  .page-containers :nth-child(4n - 3) .image{
+  .page-containers :nth-child(4n - 2) .image{
     background-image: url("../imgs/sat3291.jpg");
   }
 
   /*Page 1*/
-  .page-containers :nth-child(4n - 2) .image{
+  .page-containers :nth-child(4n - 3) .image{
     background-image: url("../imgs/claw2green.jpg");
   }
-  .page-containers :nth-child(4n - 2) .image .text-body h2{
+  .page-containers :nth-child(4n - 3) .image .text-body h2{
     font-size: 2.6em;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body h4{
+  .page-containers :nth-child(4n - 3) .image .text-body h4{
     font-size: 2em;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body p{
+  .page-containers :nth-child(4n - 3) .image .text-body p{
     font-size: 1.4em;
     line-height: 1.4;
   }
@@ -319,16 +319,16 @@ p{
     text-align: center;
   }
 
-  .page-containers :nth-child(4n - 2) .image .text-body h2{
+  .page-containers :nth-child(4n - 3) .image .text-body h2{
     font-size: 2.2em;
     padding-top: 10vh;
     padding-bottom: 0;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body h4{
+  .page-containers :nth-child(4n - 3) .image .text-body h4{
     font-size: 1.6em;
     padding-top: 2vh;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body p{
+  .page-containers :nth-child(4n - 3) .image .text-body p{
     font-size: 1.4em;
     padding-top: 65vh;
   }
@@ -386,11 +386,11 @@ p{
     opacity: 1;
   }
 
-  .page-containers :nth-child(4n - 3) .image{
+  .page-containers :nth-child(4n - 2) .image{
     background-image: url("../imgs/sat2126.jpg");
   }
 
-  .page-containers :nth-child(4n - 2) .image{
+  .page-containers :nth-child(4n - 3) .image{
     background-image: url("../imgs/claw0green.jpg");
   }
 
@@ -419,15 +419,15 @@ p{
     transform: translateY(0);
   }
 
-  .page-containers :nth-child(4n - 2) .image .text-body h2{
+  .page-containers :nth-child(4n - 3) .image .text-body h2{
     font-size: 2em;
     padding: 0;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body h4{
+  .page-containers :nth-child(4n - 3) .image .text-body h4{
     font-size: 1.4em;
     padding-top: 2vh;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body p{
+  .page-containers :nth-child(4n - 3) .image .text-body p{
     font-size: 1.1em;
     padding-right: 0;
     padding-left: 0;
@@ -516,7 +516,7 @@ p{
     opacity: 1;
   }
 
-  .page-containers :nth-child(4n - 2) .image{
+  .page-containers :nth-child(4n - 3) .image{
     background-image: url("../imgs/claw0green.jpg");
   }
 }
@@ -538,15 +538,15 @@ p{
     text-align: center;
   }
 
-  .page-containers :nth-child(4n - 2) .image .text-body h2{
+  .page-containers :nth-child(4n - 3) .image .text-body h2{
     font-size: 2em;
     padding-top: 10vh;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body h4{
+  .page-containers :nth-child(4n - 3) .image .text-body h4{
     font-size: 1.4em;
     padding-top: 2vh;
   }
-  .page-containers :nth-child(4n - 2) .image .text-body p{
+  .page-containers :nth-child(4n - 3) .image .text-body p{
     font-size: 1.3em;
     padding-top: 95vh;
   }
@@ -598,7 +598,7 @@ p{
     opacity: 1;
   }
 
-  .page-containers :nth-child(4n - 2) .image{
+  .page-containers :nth-child(4n - 3) .image{
     background-image: url("../imgs/claw0green.jpg");
   }
 }
