@@ -131,8 +131,18 @@ p{
 .init .slider-delay,
 .init .slider-post-delay,
 .init .slider-delay2,
-.init .slider-post-delay2{
+.init .slider-post-delay2,
+.init .fader{
 	opacity: 0;
+}
+
+.page-containers .page .fader{
+  -webkit-transition: -webkit-transform 0.75s, opacity 0.75s;
+  -moz-transition: -moz-transform 0.75s, opacity 0.75s;
+  transition: transform 0.75s, opacity 0.75s;
+  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+  -moz-transition-delay: 0.6s;
 }
 
 .page-containers .page .slider{
@@ -205,6 +215,10 @@ p{
   -moz-transform: translateY(120px);
   transform: translateY(120px);
   opacity: 0;
+}
+
+.page.animate .fader{
+  opacity: 1;
 }
 
 .page.animate .left,
@@ -378,7 +392,6 @@ p{
 
   /*iPad*/
   @media only screen and (max-width: 768px) {
-
   }
 
   /*iPhone Portrait*/
@@ -388,17 +401,17 @@ p{
     }
     .page-containers :nth-child(4n - 3) .image .text-body h2{
       font-size: 2em;
-      padding: 0;
+      padding-top: 10vh;
     }
     .page-containers :nth-child(4n - 3) .image .text-body h4{
       font-size: 1.4em;
-      padding-top: 2vh;
+      line-height: 1.3;
     }
     .page-containers :nth-child(4n - 3) .image .text-body p{
       font-size: 1.1em;
       padding-right: 0;
       padding-left: 0;
-      padding-top: 64vh;
+      padding-top: 65vh;
     }
   }
   /*iPhone Landscape*/
@@ -419,7 +432,6 @@ p{
 
 
 /*Sat Page 2*/
-
 
   .page-containers :nth-child(4n - 2) .image{
     background-color: rgb(35,35,35);
@@ -446,35 +458,112 @@ p{
 
   .page-containers :nth-child(4n - 2) .init .animate .moving-image{
     -webkit-transform: translate(-50%, -50%);
-  	opacity: 1;
+    -webkit-transition: -webkit-transform 0.75s, opacity 0.75s;
+    -moz-transition: -moz-transform 0.75s, opacity 0.75s;
+    transition: transform 0.75s, opacity 0.75s;
+    transition-delay: 0.85s;
+    -webkit-transition-delay: 0.85s;
+    -moz-transition-delay: 0.85s;
   }
 
   .page-containers :nth-child(4n - 2) .moving-image-container .moving-image{
     top: 50%;
     left: 50%;
-    z-index:5;
-    width: 960px;
+    width: 600px;
     height: 540px;
     position: absolute;
     -webkit-transform: translate(-10%, -50%);
-  }
-
-  .page-containers :nth-child(4n - 2) .init .complete .moving-image video{
-    display: none;
+    padding-left: 5vw;
   }
 
   .page-containers :nth-child(4n - 2) .end-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    z-index:5;
     display: none;
-    width: 960px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    padding: 0;
+    width: 600px;
     height: 540px;
-    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(0, 0);
   }
 
-  .page-containers :nth-child(4n - 2) .init .complete .moving-image .end-image{
+  .completed .moving-image video{
+    display: none;
+  }
+
+  .completed .moving-image .end-image{
     display: block;
+  }
+
+  /*Med Desktop*/
+  @media only screen and (max-width: 1400px) {
+    .page-containers :nth-child(4n - 2) .image .text-body h2{
+      font-size: 2.5em;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body h4{
+      font-size: 1.9em;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body p{
+      font-size: 1.3em;
+      line-height: 1.4;
+    }
+  }
+
+  /*iPhone Portrait*/
+  @media only screen and (max-width: 736px) and (orientation : portrait) {
+    .page-containers :nth-child(4n - 2) .image .text-body{
+      font-size: 0.8em;
+      padding-top: 0;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body h2{
+      font-size: 2em;
+      padding: 0;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body h4{
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body p{
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 20vh;
+    }
+    .page-containers :nth-child(4n -2) .image .moving-image-container, .page-containers :nth-child(4n -2) .image .moving-image-container .moving-image{
+      display: none;
+    }
+  }
+
+  /*iPhone Landscape*/
+  @media only screen and (max-width: 736px) and (orientation : landscape) {
+  .page-containers :nth-child(4n - 2) .image .text-body h2{
+      font-size: 2em;
+      padding-top: 10vh;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body h4{
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body p{
+      font-size: 1.3em;
+      padding-top: 95vh;
+    }
+  }
+
+  /*iPad 2126 × 2768*/
+  @media only screen and (max-width: 768px) {
+    .page-containers :nth-child(4n - 2) .image .text-body h2{
+      font-size: 2.2em;
+      padding-top: 10vh;
+      padding-bottom: 0;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body h4{
+      font-size: 1.6em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 2) .image .text-body p{
+      font-size: 1.4em;
+      padding-top: 20vh;
+    }
   }
 
 
@@ -651,12 +740,11 @@ p{
     .page-containers :nth-child(4n) .image .text-body h2{
       color: #ffffff;
       font-size: 2em;
-      padding: 0;
+      padding-top: 5vh;
     }
     .page-containers :nth-child(4n) .image .text-body h4{
       color: #ffffff;
       font-size: 1.4em;
-      padding-top: 2vh;
     }
     .page-containers :nth-child(4n) .image .text-body p{
       color: #ffffff;
@@ -665,10 +753,10 @@ p{
       font-size: 1.1em;
       padding-right: 0;
       padding-left: 0;
-      padding-top: 95vh;
+      padding-top: 90vh;
     }
     .page-containers :nth-child(4n) .image .moving-image-container{
-      padding-top: 45%;
+      padding-top: 43%;
     }
     .page-containers :nth-child(4n) .image .moving-image{
       max-width: 300px;
