@@ -19,6 +19,7 @@ article, aside, details, figcaption, figure, navbar, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  background-color: rgb(35,35,35);
 }
 
 ol, ul,li {
@@ -44,13 +45,18 @@ p{
   position: relative;
 }
 
+.page-containers{
+  margin-top: 80px;
+}
+
 .page-containers .page .image{
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
   min-height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 .page-containers .page .image .text-body{
@@ -63,6 +69,19 @@ p{
   box-sizing: border-box;
   position:absolute;
   top: 0;
+  z-index: 4;
+}
+
+.page-containers .page .image .pan-left{
+  padding-left: 5vw;
+  left: 0;
+  text-align: left;
+}
+
+.page-containers .page .image .pan-right{
+  padding-right: 5vw;
+  right: 0;
+  text-align: right;
 }
 
 .page-containers .page .image .moving-image-container{
@@ -75,11 +94,13 @@ p{
 	-webkit-align-items: center;
 	-webkit-box-align: center;
 	align-items: center;
+  z-index: 3;
 }
 .page-containers .page .image .moving-image-container .moving-image{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 3;
 }
 
 .page-containers h2{
@@ -198,215 +219,20 @@ p{
 	opacity: 1;
 }
 
-.page-containers :nth-child(4n - 2) .image{
-  background-image: url("../imgs/sat2878.jpg");
-}
-
-/*Page 1*/
-/*2878 × 1747*/
-.page-containers :nth-child(4n - 3) .image{
-  background-image: url("../imgs/claw3green.jpg");
-}
-
-.page-containers :nth-child(4n - 3) .image .text-body{
-  padding-left: 5vw;
-  left: 0;
-}
-
-.page-containers :nth-child(4n - 3) .image .text-body h2{
-    color: #090909;
-    padding-top: 80px;
-    padding-bottom: 5%;
-}
-.page-containers :nth-child(4n - 3) .image .text-body h4{
-    color: #090909;
-}
-.page-containers :nth-child(4n - 3) .image .text-body p{
-    color: #090909;
-    padding-top: 15%;
-    padding-right: 15%;
-}
-
-
-/*Page 2*/
-
-.page-containers :nth-child(4n - 1) .image{
-  background-color: #46494C;
-}
-
-.page-containers :nth-child(4n - 1) .image .text-body{
-  text-align: right;
-  padding-right: 5vw;
-  right: 0;
-}
-
-.page-containers :nth-child(4n - 1) .image .text-body h2{
-  color: #ffffff;
-  padding-bottom: 5%;
-}
-.page-containers :nth-child(4n - 1) .image .text-body h4{
-  color: #ffffff;
-}
-.page-containers :nth-child(4n - 1) .image .text-body p{
-  color: #ffffff;
-  padding-top: 15%;
-  padding-left: 15%;
-}
-.page-containers :nth-child(4n - 1) .image .moving-image{
-  background-image: url("../imgs/botbot.jpg");
-  width: 375px;
-  height: 667px;
-  top: 0;
-  margin: auto auto;
-  margin-left: 10vw;
-  -webkit-box-shadow: 0 2px 2px 2px #2D2F31;
-  -moz-box-shadow: 0 2px 2px 2px #2D2F31;
-  box-shadow: 0 2px 2px 2px #2D2F31;
-}
-
-
-/*Med Desktop 3192 × 2207*/
-@media only screen and (max-width: 1400px) {
-  .page-containers :nth-child(4n - 2) .image{
-    background-image: url("../imgs/sat3291.jpg");
-  }
-
-  /*Page 1*/
-  .page-containers :nth-child(4n - 3) .image{
-    background-image: url("../imgs/claw2green.jpg");
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body h2{
-    font-size: 2.6em;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body h4{
-    font-size: 2em;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body p{
-    font-size: 1.4em;
-    line-height: 1.4;
-  }
-
-  /*Page 2*/
-
-  .page-containers :nth-child(4n - 1) .image .text-body h2{
-    font-size: 2.6em;
-  }
-  .page-containers :nth-child(4n - 1) .image .text-body h4{
-    font-size: 2em;
-  }
-  .page-containers :nth-child(4n - 1) .image .text-body p{
-    font-size: 1.4em;
-    line-height: 1.4;
-  }
-  .page-containers :nth-child(4n - 1) .image .moving-image{
-    margin-left: 5vw;
-  }
-}
-
-/*iPad 2126 × 2768*/
-@media only screen and (max-width: 768px) {
-  .page-containers .page .image{
-    height: 140vh;
-  }
-
-  .page-containers .page .image .text-body{
-    width: 100%;
-    height: 100%;
-    padding-top: 65px;
-    box-sizing: border-box;
-    padding-left: 4%;
-    padding-right: 4%;
-    text-align: center;
-  }
-
-  .page-containers :nth-child(4n - 3) .image .text-body h2{
-    font-size: 2.2em;
-    padding-top: 10vh;
-    padding-bottom: 0;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body h4{
-    font-size: 1.6em;
-    padding-top: 2vh;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body p{
-    font-size: 1.4em;
-    padding-top: 65vh;
-  }
-
-  .page-containers p{
-    line-height: 1.3;
-    padding-right: 0;
-  }
-
-  .init .slider {
-  	opacity: 1;
-  }
-
-  .init .slider-delay{
-    opacity: 1;
-  }
-
-  .init .slider-delay2{
-    opacity: 1;
-  }
-
-  .init .left {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-
-  .init .right {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-
-  .init .bottom {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-  }
-
-  .page.animate .left,
-  .page.animate .right,
-  .page.animate .bottom, {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
-    opacity: 1;
-  }
-
-  .page-containers :nth-child(4n - 2) .image{
-    background-image: url("../imgs/sat2126.jpg");
-  }
-
-  .page-containers :nth-child(4n - 3) .image{
-    background-image: url("../imgs/claw0green.jpg");
-  }
-
-}
-
 /*iPhone Portrait*/
-/*come back*/
 @media only screen and (max-width: 736px) and (orientation : portrait) {
-
   .page-containers .page .image{
     height: 140vh;
   }
+
+  .page-containers{
+    margin-top: 65px;
+  }
+
   .page-containers .page .image .text-body{
     width: 100%;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 0;
     box-sizing: border-box;
     padding-left: 4%;
     padding-right: 4%;
@@ -419,189 +245,444 @@ p{
     transform: translateY(0);
   }
 
-  .page-containers :nth-child(4n - 3) .image .text-body h2{
-    font-size: 2em;
-    padding: 0;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body h4{
-    font-size: 1.4em;
-    padding-top: 2vh;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body p{
-    font-size: 1.1em;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 64vh;
-  }
-
-  /*Page 2*/
-  .page-containers :nth-child(4n - 1) .image{
-    height: 150vh;
-  }
-
-  .page-containers :nth-child(4n - 1) .image .text-body{
-    padding-top: 0;
-  }
-
-  .page-containers :nth-child(4n - 1) .image .text-body h2{
-    color: #ffffff;
-    font-size: 2em;
-    padding: 0;
-  }
-  .page-containers :nth-child(4n - 1) .image .text-body h4{
-    color: #ffffff;
-    font-size: 1.4em;
-    padding-top: 2vh;
-  }
-  .page-containers :nth-child(4n - 1) .image .text-body p{
-    color: #ffffff;
-    padding-top: 15%;
-    padding-left: 15%;
-    font-size: 1.1em;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 95vh;
-  }
-
-  .page-containers :nth-child(4n - 1) .image .moving-image-container{
-    padding-top: 45%;
-  }
-
-  .page-containers :nth-child(4n - 1) .image .moving-image{
-    max-width: 300px;
-    max-height: 520px;
-    margin: 0 auto;
-  }
-
   .page-containers p{
     line-height: 1.3;
     padding-right: 0;
   }
 
-  .init .slider {
-  	opacity: 1;
-  }
-
-  .init .slider-delay{
-    opacity: 1;
-  }
-
-  .init .slider-delay2{
-    opacity: 1;
-  }
-
+  /*come back*/
   .init .left {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
+    -webkit-transform: translateY(120px);
+    -moz-transform: translateY(120px);
+    transform: translateY(120px);
+    opacity: 0;
   }
 
   .init .right {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
+    -webkit-transform: translateY(120px);
+    -moz-transform: translateY(120px);
+    transform: translateY(120px);
+    opacity: 0;
+  }
+
+  .init .bottom {
+    -webkit-transform: translateY(120px);
+    -moz-transform: translateY(120px);
+    transform: translateY(120px);
+    opacity: 0;
   }
 
   .page.animate .left,
-  .page.animate .right {
+  .page.animate .right,
+  .page.animate .bottom {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     transform: translateY(0px);
-    opacity: 1;
-  }
-
-  .page-containers :nth-child(4n - 3) .image{
-    background-image: url("../imgs/claw0green.jpg");
+  	opacity: 1;
   }
 }
-
-/*iPhone Landscape*/
-@media only screen and (max-width: 736px) and (orientation : landscape) {
-/*come back*/
+/*iPad*/
+@media only screen and (max-width: 768px) {
   .page-containers .page .image{
-    height: 200vh;
+    height: 140vh;
+  }
+
+  .page-containers{
+    margin-top: 65px;
   }
 
   .page-containers .page .image .text-body{
     width: 100%;
     height: 100%;
-    padding-top: 5px;
+    padding-top: 0;
     box-sizing: border-box;
     padding-left: 4%;
     padding-right: 4%;
     text-align: center;
   }
 
-  .page-containers :nth-child(4n - 3) .image .text-body h2{
-    font-size: 2em;
-    padding-top: 10vh;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body h4{
-    font-size: 1.4em;
-    padding-top: 2vh;
-  }
-  .page-containers :nth-child(4n - 3) .image .text-body p{
-    font-size: 1.3em;
-    padding-top: 95vh;
-  }
-
-  .page-containers :nth-child(4n - 1) .image .moving-image{
-  display: none;
-  }
-
   .page-containers p{
     line-height: 1.3;
     padding-right: 0;
   }
+}
 
-  .init .slider {
+/*iPhone Landscape*/
+@media only screen and (max-width: 736px) and (orientation : landscape) {
+  .page-containers .page .image{
+    height: 200vh;
+  }
+
+  .page-containers{
+    margin-top: 65px;
+  }
+
+  .page-containers .page .image .text-body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+  }
+  .page-containers p{
+    line-height: 1.3;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+
+/*Sat Page 1*/
+
+  .page-containers :nth-child(4n - 3) .image{
+    background-image: url("../imgs/satdark.jpg");
+  }
+
+  .page-containers :nth-child(4n - 3) .image .text-body{
+    color: #ffffff;
+  }
+
+  .page-containers :nth-child(4n - 3) .image .text-body h2{
+    color: inherit;
+    padding-bottom: 5%;
+  }
+
+  .page-containers :nth-child(4n - 3) .image .text-body h4{
+    color: inherit;
+  }
+
+  .page-containers :nth-child(4n - 3) .image .text-body p{
+    color: inherit;
+    padding-top: 15%;
+    padding-right: 15%;
+  }
+
+  /*Med Desktop*/
+  @media only screen and (max-width: 1400px) {
+    .page-containers :nth-child(4n - 3) .image{
+      background-image: url("../imgs/satdarkmed.jpg");
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body h2{
+      font-size: 2.6em;
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body h4{
+      font-size: 2em;
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body p{
+      font-size: 1.4em;
+      line-height: 1.4;
+    }
+  }
+
+  /*iPad*/
+  @media only screen and (max-width: 768px) {
+
+  }
+
+  /*iPhone Portrait*/
+  @media only screen and (max-width: 736px) and (orientation : portrait) {
+    .page-containers :nth-child(4n - 3) .image{
+      background-image: url("../imgs/satdark1080x1920.jpg");
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body h2{
+      font-size: 2em;
+      padding: 0;
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body h4{
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body p{
+      font-size: 1.1em;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 64vh;
+    }
+  }
+  /*iPhone Landscape*/
+  @media only screen and (max-width: 736px) and (orientation : landscape) {
+    .page-containers :nth-child(4n - 3) .image .text-body h2{
+      font-size: 2em;
+      padding-top: 10vh;
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body h4{
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 3) .image .text-body p{
+      font-size: 1.3em;
+      padding-top: 95vh;
+    }
+  }
+
+
+/*Sat Page 2*/
+
+
+  .page-containers :nth-child(4n - 2) .image{
+    background-color: rgb(35,35,35);
+  }
+
+  .page-containers :nth-child(4n - 2) .image .text-body{
+    color: #ffffff;
+  }
+
+  .page-containers :nth-child(4n - 2) .image .text-body h2{
+    color: inherit;
+    padding-bottom: 5%;
+  }
+
+  .page-containers :nth-child(4n - 2) .image .text-body h4{
+    color: inherit;
+  }
+
+  .page-containers :nth-child(4n - 2) .image .text-body p{
+    color: inherit;
+    padding-top: 15%;
+    padding-left: 15%;
+  }
+
+  .page-containers :nth-child(4n - 2) .init .animate .moving-image{
+    -webkit-transform: translate(-50%, -50%);
   	opacity: 1;
   }
 
-  .init .slider-delay{
-    opacity: 1;
+  .page-containers :nth-child(4n - 2) .moving-image-container .moving-image{
+    top: 50%;
+    left: 50%;
+    z-index:5;
+    width: 960px;
+    height: 540px;
+    position: absolute;
+    -webkit-transform: translate(-10%, -50%);
   }
 
-  .init .slider-delay2{
-    opacity: 1;
+  .page-containers :nth-child(4n - 2) .init .complete .moving-image video{
+    display: none;
   }
 
-  .init .left {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
+  .page-containers :nth-child(4n - 2) .end-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 960px;
+    height: 540px;
+    -webkit-transform: translate(-50%, -50%);
   }
 
-  .init .right {
-    -webkit-transform: translateY(-120px);
-    -moz-transform: translateY(-120px);
-    transform: translateY(-120px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px);
+  .page-containers :nth-child(4n - 2) .init .complete .moving-image .end-image{
+    display: block;
   }
 
-  .page.animate .left,
-  .page.animate .right {
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-    opacity: 1;
+
+/*Claw Page 3*/
+
+
+  .page-containers :nth-child(4n - 1) .image{
+    background-image: url("../imgs/claw3green.jpg");
   }
 
-  .page-containers :nth-child(4n - 3) .image{
-    background-image: url("../imgs/claw0green.jpg");
+  .page-containers :nth-child(4n - 1) .image .text-body{
+    color: #090909;
   }
-}
+
+  .page-containers :nth-child(4n - 1) .image .text-body h2{
+      color: inherit;
+      padding-top: 80px;
+      padding-bottom: 5%;
+  }
+
+  .page-containers :nth-child(4n - 1) .image .text-body h4{
+      color: inherit;
+  }
+
+  .page-containers :nth-child(4n - 1) .image .text-body p{
+      color: inherit;
+      padding-top: 15%;
+      padding-right: 15%;
+  }
+
+  /*Med Desktop*/
+  @media only screen and (max-width: 1400px) {
+    .page-containers :nth-child(4n - 1) .image{
+      background-image: url("../imgs/claw2green.jpg");
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body h2{
+      font-size: 2.6em;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body h4{
+      font-size: 2em;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body p{
+      font-size: 1.4em;
+      line-height: 1.4;
+    }
+  }
+
+  /*iPhone Portrait*/
+  @media only screen and (max-width: 736px) and (orientation : portrait) {
+  .page-containers :nth-child(4n - 1) .image .text-body h2{
+      font-size: 2em;
+      padding: 0;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body h4{
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body p{
+      font-size: 1.1em;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 64vh;
+    }
+    .page-containers :nth-child(4n - 1) .image{
+      background-image: url("../imgs/claw0green.jpg");
+    }
+  }
+
+  /*iPhone Landscape*/
+  @media only screen and (max-width: 736px) and (orientation : landscape) {
+  .page-containers :nth-child(4n - 1) .image .text-body h2{
+      font-size: 2em;
+      padding-top: 10vh;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body h4{
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body p{
+      font-size: 1.3em;
+      padding-top: 95vh;
+    }
+    .page-containers :nth-child(4n - 1) .image{
+      background-image: url("../imgs/claw0green.jpg");
+    }
+  }
+
+  /*iPad 2126 × 2768*/
+  @media only screen and (max-width: 768px) {
+    .page-containers :nth-child(4n - 1) .image .text-body h2{
+      font-size: 2.2em;
+      padding-top: 10vh;
+      padding-bottom: 0;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body h4{
+      font-size: 1.6em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n - 1) .image .text-body p{
+      font-size: 1.4em;
+      padding-top: 65vh;
+    }
+    .page-containers :nth-child(4n - 1) .image{
+      background-image: url("../imgs/claw0green.jpg");
+    }
+  }
+
+
+/*Bot Page 4*/
+
+
+  .page-containers :nth-child(4n) .image{
+    background-color: rgb(138,57,57);
+  }
+
+  .page-containers :nth-child(4n) .image .text-body{
+    color: #ffffff;
+  }
+
+  .page-containers :nth-child(4n) .image .text-body h2{
+    color: inherit;
+    padding-bottom: 5%;
+  }
+
+  .page-containers :nth-child(4n) .image .text-body h4{
+    color: inherit;
+  }
+
+  .page-containers :nth-child(4n) .image .text-body p{
+    color: inherit;
+    padding-top: 15%;
+    padding-left: 15%;
+  }
+
+  .page-containers :nth-child(4n) .image .moving-image{
+    background-image: url("../imgs/botbot.jpg");
+    width: 375px;
+    height: 667px;
+    top: 0;
+    margin: auto auto;
+    margin-left: 10vw;
+    -webkit-box-shadow: 0 1px 1px 1px #46494C;
+    -moz-box-shadow: 0 1px 1px 1px #46494C;
+    box-shadow: 0 1px 1px 1px #46494C;
+  }
+
+  /*Med Desktop*/
+  @media only screen and (max-width: 1400px) {
+    .page-containers :nth-child(4n) .image .text-body h2{
+      font-size: 2.6em;
+    }
+    .page-containers :nth-child(4n) .image .text-body h4{
+      font-size: 2em;
+    }
+    .page-containers :nth-child(4n) .image .text-body p{
+      font-size: 1.4em;
+      line-height: 1.4;
+    }
+    .page-containers :nth-child(4n) .image .moving-image{
+      margin-left: 5vw;
+    }
+  }
+
+  /*iPhone Portrait*/
+  @media only screen and (max-width: 736px) and (orientation : portrait) {
+    .page-containers :nth-child(4n) .image{
+      height: 150vh;
+    }
+
+    .page-containers :nth-child(4n) .image .text-body{
+      padding-top: 0;
+    }
+
+    .page-containers :nth-child(4n) .image .text-body h2{
+      color: #ffffff;
+      font-size: 2em;
+      padding: 0;
+    }
+    .page-containers :nth-child(4n) .image .text-body h4{
+      color: #ffffff;
+      font-size: 1.4em;
+      padding-top: 2vh;
+    }
+    .page-containers :nth-child(4n) .image .text-body p{
+      color: #ffffff;
+      padding-top: 15%;
+      padding-left: 15%;
+      font-size: 1.1em;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 95vh;
+    }
+    .page-containers :nth-child(4n) .image .moving-image-container{
+      padding-top: 45%;
+    }
+    .page-containers :nth-child(4n) .image .moving-image{
+      max-width: 300px;
+      max-height: 520px;
+      margin: 0 auto;
+    }
+  }
+
+  /*iPhone Landscape*/
+  @media only screen and (max-width: 736px) and (orientation : landscape) {
+    .page-containers :nth-child(4n) .image .moving-image{
+    display: none;
+    }
+  }
 
 /*Header*/
 
@@ -927,6 +1008,7 @@ p{
 /*About*/
 
   #about{
+    background-color: #ffffff;
     padding: 5em 10em;
     margin: 0;
   }
