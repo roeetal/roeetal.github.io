@@ -131,9 +131,12 @@ p{
 .init .slider-delay,
 .init .slider-post-delay,
 .init .slider-delay2,
-.init .slider-post-delay2,
-.init .fader{
+.init .slider-post-delay2{
 	opacity: 0;
+}
+
+.init .fader{
+	opacity: 1;
 }
 
 .page-containers .page .fader{
@@ -214,7 +217,6 @@ p{
   -webkit-transform: translateY(120px);
   -moz-transform: translateY(120px);
   transform: translateY(120px);
-  opacity: 0;
 }
 
 .page.animate .fader{
