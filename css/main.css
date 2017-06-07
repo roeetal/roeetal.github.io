@@ -13,7 +13,7 @@ html,body,section,article{
   font-family: 'Exo 2', sans-serif;
 }
 
-article, aside, details, figcaption, figure, navbar, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, nav, header, hgroup, menu, nav, section {
   display: block;
 }
 
