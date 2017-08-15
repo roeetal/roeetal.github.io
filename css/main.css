@@ -468,33 +468,16 @@ p{
     -moz-transition-delay: 0.85s;
   }
 
-  .page-containers :nth-child(4n - 2) .moving-image-container .moving-image{
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 540px;
-    position: absolute;
-    -webkit-transform: translate(-10%, -50%);
-    padding-left: 5vw;
-  }
-
-  .page-containers :nth-child(4n - 2) .end-image{
-    z-index:5;
-    display: none;
-    padding: 0 25px;
-    box-sizing: border-box;
-    padding: 0;
-    width: 600px;
-    height: 540px;
-    -webkit-transform: translate(0, 0);
-  }
-
-  .completed .moving-image video{
-    display: none;
-  }
-
-  .completed .moving-image .end-image{
-    display: block;
+  .page-containers :nth-child(4n - 2) .image .moving-image{
+    background-image: url("../imgs/orbit.JPG");
+    width: 614px;
+    height: 408px;
+    top: 0;
+    margin: auto auto;
+    margin-left: 5vw;
+    /*-webkit-box-shadow: 0 1px 1px 1px black;
+    -moz-box-shadow: 0 1px 1px 1px black;
+    box-shadow: 0 1px 1px 1px black;*/
   }
 
   /*Med Desktop*/
