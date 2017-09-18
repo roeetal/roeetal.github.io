@@ -5,14 +5,23 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Ro-ee Tal</title>
-      <link href="css/main.css" rel="stylesheet">
+      <link href="css/main.min.css" rel="stylesheet">
+      <link href="css/navbar.css" rel="stylesheet">
       <link rel="stylesheet" href="css/normalize.css">
       <script src="js/modernizr.custom.js"></script>
       <meta name="description" content="Ro-ee Tal"/>
   		<meta name="keywords" content="Ro-ee Tal"/>
   		<meta name="author" content="Ro-ee Tal"/>
+      <script src="js/jquery-2.1.1.js"></script>
+      <script>
+        $(function(){
+          $("#includeOrbit").load("Orbit.html");
+          $("#includeCDH").load("CDH.html");
+          $("#includeAB").load("ApartmentBot.html");
+          $("#includeClaw").load("Claw.html");
+        });
+      </script>
   </head>
-
   <body>
     <div class="cont">
       <!-- Navbar -->
@@ -35,71 +44,29 @@
           </div>
         </div>
       </nav>
-        <section id="main">
-           <div id="wrapper">
-             <div id="page-containers" class="page-containers">
-               <section class="page init animate">
-                 <div class="image">
-                   <div class="text-body pan-left">
-                     <div class="slider left"><h2>UBC orbit</h2></div>
-                     <div class="slider-delay left"><h4>Student Engineering Design Team</h4></div>
-                     <div class="slider-delay2 left"><p>Thunderbird: Our current mission will put a constellation of six cube satellites, each equipped with artificially intelligent imaging capabilities, in low-earth orbit. They will continuously image the globe and act as an early warning system for forrest fires everywhere. Visit our <a target="_blank" href="https://www.ubcorbit.com">website</a> or check out our <a target="_blank" href="https://github.com/UBCOrbit">open source contributions</a>.</p></div>
-                   </div>
-                 </div>
-               </section>
-               <section class="page" id="orbit">
-                 <div class="image">
-                   <div class="text-body pan-right">
-                     <div class="slider right"><h2>CDH & Trillium</h2></div>
-                     <div class="slider-delay right"><h4>Control and Data Handling</a></h4></div>
-                     <div class="slider-delay2 right"><p>Trillium is a redundant MCU system which uses three STM32 boards to process data while simultaneously verifying each other's processes. It's main purpose is to reduce the risk of bit flips and other potential radiation hazards in space.
-                       I spend the last two semesters developing and testing Trillium. Next, I will work on making the operating system for it. A paper on Trillium was accepted to the International Astronautical Congress and I expect to present it in September as lead of the CDH subteam.</p></div>
-                   </div>
-                   <div class="moving-image-container slider bottom">
-                     <div class="moving-image fader">
-                     </div>
-                   </div>
-                 </div>
-               </section>
-               <section class="page">
-                 <div class="image">
-                   <div class="text-body pan-left">
-                     <div class="slider left"><h2>Automated Claw</h2></div>
-                     <div class="slider-delay left"><h4>An APSC 101 Class Project</h4></div>
-                     <div class="slider-delay2 left"><p>We were tasked with building an automated claw that could simulate retrieving debris from the bottom of the ocean. Built using an Arduino, a servo motor, a sonar and various workshop tools.</p></div>
-                   </div>
-                 </div>
-               </section>
-               <section class="page">
-                 <div class="image">
-                   <div class="text-body pan-right">
-                     <div class="slider-post right"><h2>Apartment Bot</h2></div>
-                     <div class="slider-post-delay right"><h4>Made with <a href="http://www.samtingersoll.com">Sam Ingersoll</a></h4></div>
-                     <div class="slider-post-delay2 right"><p>Why spend time searching the web for things like apartments when a bot can do that for you. This bot scrapes Craigslist for new apartments listings, uses the Google Maps Distance API to filter results based on location, and then updates us with suitable housing options on Slack. If you are interested, here is the <a target="_blank" href="https://github.com/roeetal/apartment">Github repo</a>.</p></div>
-                   </div>
-                   <div class="moving-image-container slider bottom">
-                     <div class="moving-image">
-                     </div>
-                   </div>
-                 </div>
-               </section>
-             </div>
+      <div id="main">
+         <div id="wrapper">
+           <div id="page-containers" class="page-containers">
+             <section  id="includeOrbit" class="page animate"></section>
+             <section  id="includeCDH" class="page"></section>
+             <section  id="includeClaw" class="page"></section>
+             <section  id="includeAB" class="page"></section>
+           </div>
+        </div>
+      </div>
+      <section id="about">
+          <div>
+            <h3>About me</h3>
+            <p>
+              I created this website not only because I wanted to learn web development but also because I have a deep interest in technology and wanted to share my passion and experiences with other people.<br></br>
+              A part of me often plays with the thought of how we, as humans, would be able to expand our abilities through innovative technologies. I was recently hiking (which I must add is essential for anyone visiting Vancouver) and noticed my feet strategically sliding off roots and small rocks. And then the idea of a robot, a hiking rescue robot which could perform similar strategic calculations, came to mind. With such dynamic controls, imagine how much closer we would be to emulating the complexities of the human brain, and to applying these complexities to the development of more advanced robots.
+              My passion is to combine my expanding knowledge in mathematics and physics with my creativity and unique perspectives, with the hope of developing groundbreaking innovations. I am currently focusing on learning about solid-sttae physics, so that someday I can contribute to the development of the first scalable quantum computer.<br></br>
+              There is also this other part of me: and this part of me like to think of us, humans. How we think; why we do the things that we do; how we behave as individuals and as communities.
+              In my ideal world, I will spend the next couple of years working on the aforementioned, and maybe even try merge the worlds of mathematics and physics with that of philosophy. Hopefully the content on this website will aptly communicate how my journey is going...<br></br>
+            </p>
           </div>
         </section>
-        <section id="about">
-              <div>
-                <h3>About me</h3>
-                <p>
-                  I created this website not only because I wanted to learn web development but also because I have a deep interest in technology and wanted to share my passion and experiences with other people.<br></br>
-                  A part of me often plays with the thought of how we, as humans, would be able to expand our abilities through innovative technologies. I was recently hiking (which I must add is essential for anyone visiting Vancouver) and noticed my feet strategically sliding off roots and small rocks. And then the idea of a robot, a hiking rescue robot which could perform similar strategic calculations, came to mind. With such dynamic controls, imagine how much closer we would be to emulating the complexities of the human brain, and to applying these complexities to the development of more advanced robots.
-                  My passion is to combine my expanding knowledge in mathematics and physics with my creativity and unique perspectives, with the hope of developing groundbreaking innovations. I am currently focusing on learning about solid-sttae physics, so that someday I can contribute to the development of the first scalable quantum computer.<br></br>
-                  There is also this other part of me: and this part of me like to think of us, humans. How we think; why we do the things that we do; how we behave as individuals and as communities.
-                  In my ideal world, I will spend the next couple of years working on the aforementioned, and maybe even try merge the worlds of mathematics and physics with that of philosophy. Hopefully the content on this website will aptly communicate how my journey is going...<br></br>
-                </p>
-              </div>
-            </section>
       </div>
-      <script src="js/jquery-2.1.1.js"></script>
       <script src="js/animated-headline.js"></script>
       <script src="js/main.js"></script>
       <script src="js/classie.js"></script>
