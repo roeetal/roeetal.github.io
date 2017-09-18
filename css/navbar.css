@@ -154,6 +154,7 @@ a.icon.alt:hover:before {
 /* text rotate */
 
 .heading {
+    font-size: 1.5em;
     line-height: 1.0;
     position: relative;
     display: -moz-flex;
