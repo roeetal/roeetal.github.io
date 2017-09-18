@@ -1,9 +1,9 @@
-@import "page";
+@import "main";
 
-.moving-image{
+#includeOrbit{
+  @extend .page;
   background-image: url("../imgs/satdark.jpg");
-}
-
-.text{
-  color: #ffffff;
+  .text{
+    color: #ffffff;
+  }
 }

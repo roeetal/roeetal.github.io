@@ -1,18 +1,16 @@
-@import "page";
+@import "main";
 
-.page{
+#includeCDH{
   background-color: rgb(35,35,35);
-}
-
-.moving-image{
-  background-image: url("../imgs/orbit.JPG");
-  width: 614px;
-  height: 408px;
-  top: 0;
-  margin: auto auto;
-  margin-left: 5vw;
-}
-
-.text{
-  color: #ffffff;
+  .text{
+    color: #ffffff;
+  }
+  .image{
+    background-image: url("../imgs/orbit.JPG");
+    width: 614px;
+    height: 408px;
+    top: 0;
+    margin: auto auto;
+    margin-left: 5vw;
+  }
 }

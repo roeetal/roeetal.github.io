@@ -1,9 +1,9 @@
-@import "page";
+@import "main";
 
-.moving-image{
+#includeClaw{
   background-image: url("../imgs/claw3green.jpg");
-}
+  .text{
+    color: #090909;
+  }
 
-.text{
-  color: #090909;
 }
