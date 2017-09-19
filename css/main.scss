@@ -54,7 +54,6 @@ body {
 
 
 .pan-left{
-  @extend .page;
   .text{
     padding-left: 5vw;
     text-align: left;
@@ -65,7 +64,6 @@ body {
   }
 }
 .pan-right{
-  @extend .page;
   .text{
     padding-right: 5vw;
     text-align: right;
@@ -116,7 +114,11 @@ body {
   @include prefix(display, flex, webkit ms moz);
   @include prefix(align-items, center, webkit ms moz);
 }
+
 .image{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
   @include prefix(background-position, center, webkit ms moz);
   @include prefix(background-repeat, no-repeat, webkit ms moz);
   @include prefix(background-size, cover, webkit ms moz);
