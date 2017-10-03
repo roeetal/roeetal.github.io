@@ -11,4 +11,7 @@
     height: 470px;
     @include prefix(box-shadow, 0 0.5px 0.5px 0.5px #46494C, webkit ms moz);
   }
+  .image-container{
+    padding-left: 10vw;
+  }
 }
