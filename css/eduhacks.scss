@@ -1,14 +1,17 @@
 @import "main";
 
-#includeCDH{
+#includeEduhacks{
   background-color: #ffffff;
   .text{
     color: #090909;
-    font-size: 1.2em;
+    p{
+      font-size: 1.2em;
+    }
   }
   .image{
     background-image: url("../imgs/DWA/eduhacks.png");
-    width: 720px;
-    height: 470px;
+    width: 360px;
+    height: 235px;
+    @include prefix(box-shadow, 0 1px 1px 1px #46494C, webkit ms moz);
   }
 }
