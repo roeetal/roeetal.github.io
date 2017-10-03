@@ -75,6 +75,7 @@ body {
 }
 .pan-middle{
   .text{
+    left: 0;
     padding-right: 10vw;
     padding-left: 10vw;
     text-align: center;
@@ -125,7 +126,8 @@ body {
 .image{
   margin: auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
   @include prefix(background-position, center, webkit ms moz);
   @include prefix(background-repeat, no-repeat, webkit ms moz);
   @include prefix(background-size, cover, webkit ms moz);
