@@ -73,6 +73,13 @@ body {
     }
   }
 }
+.pan-middle{
+  .text{
+    padding-right: 10vw;
+    padding-left: 10vw;
+    text-align: center;
+  }
+}
 // Define .text colour and .moving-image image in separate scss file.
 
 .text{
