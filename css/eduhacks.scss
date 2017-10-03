@@ -9,8 +9,8 @@
     padding-left: 10vw;
     .image{
       background-image: url("../imgs/DWA/eduhacks.png");
-      width: 720px;
-      height: 470px;
+      width: 1080px;
+      height: 705px;
       @include prefix(box-shadow, 0 0.5px 0.5px 0.5px #46494C, webkit ms moz);
     }
   }
