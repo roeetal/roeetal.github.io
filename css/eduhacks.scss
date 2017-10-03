@@ -5,13 +5,13 @@
   .text{
     color: #090909;
   }
-  .image{
-    background-image: url("../imgs/DWA/eduhacks.png");
-    width: 720px;
-    height: 470px;
-    @include prefix(box-shadow, 0 0.5px 0.5px 0.5px #46494C, webkit ms moz);
-  }
   .image-container{
     padding-left: 10vw;
+    .image{
+      background-image: url("../imgs/DWA/eduhacks.png");
+      width: 720px;
+      height: 470px;
+      @include prefix(box-shadow, 0 0.5px 0.5px 0.5px #46494C, webkit ms moz);
+    }
   }
 }
