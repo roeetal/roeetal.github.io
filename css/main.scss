@@ -62,6 +62,10 @@ body {
       padding-right: 15%;
     }
   }
+  .image-container{
+    margin-right: 5vw;
+    box-sizing: border-box;
+  }
 }
 .pan-right{
   .text{
@@ -71,6 +75,10 @@ body {
     p{
       padding-left: 15%;
     }
+  .image-container{
+    margin-left: 5vw;
+    box-sizing: border-box;
+  }
   }
 }
 .pan-middle{
