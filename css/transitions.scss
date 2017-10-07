@@ -37,33 +37,33 @@
 }
 
 .bottom-slider{
-  @include transition(transform 0.75s, opacity 0.75s);
+  @include transition(transform 0.65s, opacity 0.65s);
 }
 
 .heading-slider{
-  @include transition(transform 0.75s, opacity 0.75s);
+  @include transition(transform 0.65s, opacity 0.65s);
 }
 
 .subheading-slider{
-  @include transition(transform 0.75s, opacity 0.75s);
+  @include transition(transform 0.65s, opacity 0.65s);
   @include prefix(transition-delay, 0.05s);
 }
 
 .body-slider{
-  @include transition(transform 0.75s, opacity 0.75s);
+  @include transition(transform 0.65s, opacity 0.65s);
   @include prefix(transition-delay, 0.1s);
 }
 
 .delayed{
   .heading-slider{
-    @include prefix(transition-delay, 0.75s);
+    @include prefix(transition-delay, 0.65s);
   }
 
   .subheading-slider{
-    @include prefix(transition-delay, 0.8s);
+    @include prefix(transition-delay, 0.7s);
   }
 
   .body-slider{
-    @include prefix(transition-delay, 0.85s);
+    @include prefix(transition-delay, 0.75s);
   }
 }
