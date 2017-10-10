@@ -1,27 +1,32 @@
 @import "mixins";
 
 #includeEduhacks2{
-  .page{
-    min-height: 500px;
-    height: auto;
-  }
+  min-height: 70vh;
+  height: auto!important;
   background-color: #ffffff;
-  .body-slider{
-    position: absolute;
-    @include prefix(display, flex, webkit ms moz);
-    @include prefix(align-items, center, webkit ms moz);
-  }
   .text{
     color: #090909;
     width: 100%;
-    height: 100%;
-    text-align: left;
     padding: 0;
-    p{
-      margin: auto;
-      padding: 0 5%;
-      margin-top: 0!important;
+    display: flex;
+    flex-direction: row;
+    .body-slider{
       width: 50%;
+      height: 100%;
+      @include prefix(display, flex, webkit ms moz);
+      text-align: left;
+      position:relative;
+    }
+    .delayed{
+      width: inherit;
+      width: 50%;
+      .body-slider{
+        width: 100%;
+      }
+    }
+    p{
+      padding: 10%;
+      padding-top: 0;
     }
   }
 }
