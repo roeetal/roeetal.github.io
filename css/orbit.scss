@@ -1,7 +1,6 @@
-@import "main";
+@import "mixins";
 
 #includeOrbit{
-  @extend .page;
   background-image: url("../imgs/satdark.jpg");
   .text{
     color: #ffffff;

@@ -154,22 +154,24 @@ a.icon.alt:hover:before {
 /* text rotate */
 
 .heading {
-    font-size: 1.5em;
-    line-height: 1.0;
-    position: relative;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -ms-flex-align: center;
-    -moz-flex-align:center;
-    -webkit-flex-align:center;
-    align-items: center;
-    justify-content: space-around;
-    -webkit-justify-content: space-around;
-    -mos-justify-content: space-around;
-    text-align: justify;
-    height: inherit;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300!important;
+  font-size: 1.6em;
+  line-height: 1.0;
+  position: relative;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -moz-flex-align:center;
+  -webkit-flex-align:center;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -mos-justify-content: space-around;
+  text-align: justify;
+  height: inherit;
 }
 
 .box-words-wrapper {
