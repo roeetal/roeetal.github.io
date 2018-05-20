@@ -2,6 +2,7 @@
 
 ## Design
 
+```text
 pages-container
 └─── page
     └─── text
@@ -9,6 +10,7 @@ pages-container
         └─── body
     └───image-container
         └─── image
+```
 
 ### `page`:
 - `pan-`{`left` or `right`}: text alignment
