@@ -1,15 +1,13 @@
 @import "mixins";
 
-#includeEduhacks{
+#p5{
   background-color: #ffffff;
   .text{
     color: #090909;
   }
   .image-container{
-    padding: 0 5vw;
-    // box-sizing: border-box;
     .image{
-      background-image: url("../imgs/DWA/eduhacks.png");
+      background-image: url("../imgs/p5/eduhacks.png");
       width: 720px;
       height: 470px;
       @include prefix(box-shadow, 0 0.5px 0.5px 0.5px #46494C, webkit ms moz);

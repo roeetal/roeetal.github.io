@@ -1,21 +1,14 @@
 @import "mixins";
 
-// Import fonts
-
-// @import url('https://fonts.googleapis.com/css?family=Exo+2:100,200,300,300i,400,400i,500,500i,600,700,800');
 @import url(font-awesome.min.css);
-// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
-// Define structure of outer shell of website
-
+// TODO: tag for dark, light background, color...
 html,body,section,article{
   margin: 0;
   padding: 0;
   border: 0;
-  // font-family: 'Exo 2', sans-serif;
-  // font-family: 'Roboto', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 article, aside, details, figcaption, figure, nav, header, hgroup, menu, nav, section {
@@ -24,22 +17,19 @@ article, aside, details, figcaption, figure, nav, header, hgroup, menu, nav, sec
 
 body {
   line-height: 1;
-  ol, ul,li {
-    list-style: none;
-  }
+}
 
-  a{
-    text-decoration: none;
-    color: #429BB2;
-  }
+ol, ul,li {
+  list-style: none;
+}
 
-  p{
-    text-decoration: none;
-    letter-spacing: 1.4px;
-    font-size: 1.2em;
-    line-height: 1.3em;
-    font-weight: 300;
-  }
+a{
+  text-decoration: none;
+  color: #429BB2;
+}
+
+em{
+  font-style: normal;
 }
 
 .pages-container{
@@ -60,33 +50,22 @@ body {
 
 .pan-left{
   .text{
-    padding-left: 5vw;
     text-align: left;
     left: 0;
     p{
-      padding-right: 15%;
+      padding-right: 10%;
     }
   }
 }
 .pan-right{
   .text{
-    padding-right: 5vw;
     text-align: right;
     right: 0;
     p{
-      padding-left: 15%;
+      padding-left: 10%;
     }
   }
 }
-.pan-middle{
-  .text{
-    left: 0;
-    padding-right: 10vw;
-    padding-left: 10vw;
-    text-align: center;
-  }
-}
-// Define .text colour and .moving-image image in separate scss file.
 
 .text{
   width: 50%;
@@ -98,36 +77,32 @@ body {
   box-sizing: border-box;
   position:absolute;
   top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
   z-index: 3;
   h2{
-    color: inherit;
-    font-weight: 600;
-    font-size: 2.8em;
-    letter-spacing: 1px;
-    margin: 0;
-    padding-bottom: 5%;
-  }
-  h4{
-    color: inherit;
-    font-weight: 300;
-    font-size: 2.3em;
-    letter-spacing: 2px;
-    margin: 0;
+    font-weight: 100;
+    font-size: 7em;
   }
   p{
-    color: inherit;
-    padding-top: 15%;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: 300;
+    letter-spacing: 0.06em;
   }
-}
-
-em{
-  font-style: normal;
+  h3{
+    padding-top: 2em;
+    font-weight: 600;
+    font-size: 1em;
+  }
 }
 
 .image-container{
   height: 100%;
   width: 50%;
+  padding: 5%;
   position: absolute;
+  box-sizing: border-box;
   @include prefix(display, flex, webkit ms moz);
   @include prefix(align-items, center, webkit ms moz);
 }

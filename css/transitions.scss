@@ -1,8 +1,10 @@
 @import "css3-mixins";
 @import "mixins";
 
+// TODO: size of pixle translate responsive
+
 .init{
-  .heading-slider, .subheading-slider, .body-slider, .bottom-slider{
+  .heading, .body, .bottom-slider{
     opacity: 0;
   }
   .bottom-slider{
@@ -11,25 +13,25 @@
 }
 
 .pan-left{
-    .heading-slider, .subheading-slider, .body-slider{
+    .heading, .body{
       @include transform(translateX(-120px));
     }
 }
 
 .pan-right{
-    .heading-slider, .subheading-slider, .body-slider{
+    .heading, .body{
       @include transform(translateX(120px));
     }
 }
 
 .pan-middle{
-    .heading-slider, .subheading-slider, .body-slider{
+    .heading, .body{
       @include transform(translateY(200px));
     }
 }
 
 .animate{
-  .heading-slider, .subheading-slider, .body-slider, .bottom-slider{
+  .heading, .body, .bottom-slider{
   	opacity: 1;
     @include transform(translateX(0px));
     @include transform(translateY(0px));
@@ -40,30 +42,30 @@
   @include transition(transform 0.65s, opacity 0.65s);
 }
 
-.heading-slider{
+.heading{
   @include transition(transform 0.65s, opacity 0.65s);
 }
 
-.subheading-slider{
+.subheading{
   @include transition(transform 0.65s, opacity 0.65s);
   @include prefix(transition-delay, 0.05s);
 }
 
-.body-slider{
+.body{
   @include transition(transform 0.65s, opacity 0.65s);
   @include prefix(transition-delay, 0.1s);
 }
 
 .delayed{
-  .heading-slider{
+  .heading{
     @include prefix(transition-delay, 0.65s);
   }
 
-  .subheading-slider{
+  .subheading{
     @include prefix(transition-delay, 0.7s);
   }
 
-  .body-slider{
+  .body{
     @include prefix(transition-delay, 0.75s);
   }
 }

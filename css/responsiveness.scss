@@ -1,0 +1,11 @@
+$breakpoints: (
+  mobile: 736px,
+  tablet: 768px,
+  laptop: 1400px
+);
+
+@mixin break($size, $orientation) {
+  @media only screen and (max-width: map-get($breakpoints, $size) and (orientation: $orientation)) {
+    @content;
+  }
+}
