@@ -1,9 +1,9 @@
 @import "mixins";
 
-#includeAB{
+#p1{
   background-color: rgb(138,57,57);
   .image{
-    background-image: url("../imgs/botbot.jpg");
+    background-image: url("../imgs/p1/botbot.jpg");
     width: 375px;
     height: 667px;
     @include prefix(box-shadow, 0 1px 1px 1px #46494C, webkit ms moz);

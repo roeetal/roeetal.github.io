@@ -93,7 +93,7 @@
 }
 
 @media only screen and (max-width: 736px) {
-    .heading {
+    .head {
         font-size: 80px;
     }
     #intro h5 {
@@ -153,7 +153,7 @@ a.icon.alt:hover:before {
 
 /* text rotate */
 
-.heading {
+.head {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300!important;
   font-size: 1.6em;
@@ -213,18 +213,18 @@ a.icon.alt:hover:before {
     opacity: 1;
 }
 
-.heading.rotate-2 i,
-.heading.rotate-2 em {
+.head.rotate-2 i,
+.head.rotate-2 em {
     display: inline-block;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.heading.rotate-2 b {
+.head.rotate-2 b {
     opacity: 0;
 }
 
-.heading.rotate-2 i {
+.head.rotate-2 i {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform: translateZ(-20px) rotateX(90deg);
@@ -232,21 +232,21 @@ a.icon.alt:hover:before {
     opacity: 0;
 }
 
-.is-visible .heading.rotate-2 i {
+.is-visible .head.rotate-2 i {
     opacity: 1;
 }
 
-.heading.rotate-2 i.in {
+.head.rotate-2 i.in {
     -webkit-animation: box-rotate-2-in 0.6s forwards;
     animation: box-rotate-2-in 0.6s forwards;
 }
 
-.heading.rotate-2 i.out {
+.head.rotate-2 i.out {
     -webkit-animation: box-rotate-2-out 0.4s forwards;
     animation: box-rotate-2-out 0.4s forwards;
 }
 
-.heading.rotate-2 em {
+.head.rotate-2 em {
     -webkit-transform: translateZ(20px);
     transform: translateZ(20px);
 }

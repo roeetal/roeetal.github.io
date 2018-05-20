@@ -1,13 +1,35 @@
 # Personal Website
 
-I created this website not only because I wanted to learn web development but also because I have a deep interest in technology and design and wanted to share my passion and experiences with other people.
+## Design
 
-The website is constructed using scss and allows for "object oriented" page design. Essentially, each page is a full screen and allows for the intsertion of text and images with customizability of the background colour/image.
+pages-container
+└─ page
+  └─ text
+    └─ heading
+    └─ body
+  └─ image-container
+    └─ image
 
-TODO:
-- Make responsive for mobile.
-- Add page for work done at the Quantum Devices Group.
+### `page`:
+- `pan-`{`left` or `right`}: text alignment
+- `init`: opacity = 0, starting position before transition
+- `animate`: opacity = 1, start transition
+- Use background image or `image`
 
-Credit to:
+### `text`:
+- `delayed`: delay transition
+
+### `image-container`: (optional)
+- Use when not using background image
+
+## Style
+
+- `h1`: navbar
+- `h2`: heading
+- `p`: body
+- `h3`: footnote for technical details
+- `a`: link
+
+Credit:
 - Sam Ingersoll
 - Ahmed Eissa
