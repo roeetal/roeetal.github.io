@@ -3,12 +3,12 @@
 ## Design
 
 pages-container
-└─ page
-  └─ text
-    └─ heading
-    └─ body
-  └─ image-container
-    └─ image
+└─── page
+    └─── text
+        └─── heading
+        └─── body
+    └───image-container
+        └─── image
 
 ### `page`:
 - `pan-`{`left` or `right`}: text alignment
