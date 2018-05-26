@@ -13,13 +13,13 @@ pages-container
 ```
 
 ### `page`:
-- `pan-`{`left` or `right`}: text alignment
 - `init`: opacity = 0, starting position before transition
 - `animate`: opacity = 1, start transition
 - Use background image or `image`
 
 ### `text`:
 - `delayed`: delay transition
+- `pan-`{`left` or `right`}: text alignment
 
 ### `image-container`: (optional)
 - Use when not using background image
