@@ -1,0 +1,17 @@
+#p6 {
+  background-color: #ffffff;
+}
+#p6 .text {
+  color: #090909;
+}
+#p6 .image-container .image {
+  background-image: url("../imgs/p6/vanessa.png");
+  width: 720px;
+  height: 470px;
+  -webkit-box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+  -ms-box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+  -moz-box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+  box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+}
+
+/*# sourceMappingURL=p6.min.css.map */
