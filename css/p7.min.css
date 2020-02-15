@@ -1,0 +1,17 @@
+#p7 {
+  background-color: #9AB87A;
+}
+#p7 .text {
+  color: #090909;
+}
+#p7 .image-container .image {
+  background-image: url("../imgs/p7/tree.png");
+  width: 720px;
+  height: 470px;
+  -webkit-box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+  -ms-box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+  -moz-box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+  box-shadow: 0 0.5px 0.5px 0.5px #46494C;
+}
+
+/*# sourceMappingURL=p7.min.css.map */
